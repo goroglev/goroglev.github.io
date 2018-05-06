@@ -35,8 +35,6 @@
  .person {
      border: 10px solid transparent;
      margin-bottom: 25px;
-     width: 80%;
-     height: 80%;
      opacity: 0.8;
      -webkit-filter: grayscale(90%);
      filter: grayscale(100%);
@@ -148,7 +146,6 @@
      font-family: 'Raleway', Montserrat, sans-serif;
      margin-bottom: 0;
      background-color: #2d2d30;
-     border: 0;
      font-size: 12px !important;
      font-weight: 600;
      letter-spacing: 4px;
@@ -160,13 +157,12 @@
      background-color: #ababab;
      font-family: 'Raleway', Montserrat, sans-serif;
      margin-bottom: 0;
-     border: 0;
      font-size: 12px !important;
      font-weight: 600;
      letter-spacing: 4px;
      opacity: 0.9;
-     padding-right: 22em;
-     z-index: 2
+     padding-right: 11em;
+     z-index: 1;
  }
 
  .navbar li a,
@@ -181,16 +177,21 @@
 
  .navbar-nav li a:hover {
      color: #fff !important;
-     background-color: #ababab !important;
+     font-weight: bold;
  }
 
  .navbar-nav li.active a {
      color: #fff !important;
-     background-color: #ababab !important;
+     font-weight: bold;
  }
 
  .navbar-default .navbar-toggle {
      border-color: transparent;
+ }
+
+ .navbar-expand .navbar-nav .nav-link {
+     padding-right: 1em;
+     padding-left: 1rem;
  }
 
  .open .dropdown-toggle {

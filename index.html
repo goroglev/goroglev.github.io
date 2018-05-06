@@ -3,18 +3,21 @@
 <html lang="en">
 
 <head>
-    <!-- Theme Made By www.w3schools.com - No Copyright -->
     <title>Babylon Orchster</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"
-        type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
     <link href="styles/main.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
@@ -23,34 +26,34 @@
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
     <div class='thetop'></div>
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-                <a class="navbar-brand" href="#myPage"><img src="styles/pictures/logoNoW.png" alt="" width="25" height="25"></a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#myPage">HOME</a></li>
-                    <li><a href="#tour">KONZERTE</a></li>
-                    <li><a href="#news">NEUIGKEITEN</a></li>
-                    <li><a href="#contact">KONTAKT</a></li>
-                    <li><a href="pages/about.html">ÜBER UNS</a></li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">MEHR
-          <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="pages/donation.html">UNTERSTÜTZEN</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+
+    <nav class="navbar navbar-dark fixed-top navbar-expand  p-1 ">
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar"></button>
+        <a class="navbar-brand" href="index.html"><img src="styles/pictures/logoNoW.png" alt="" width="25" height="25"></a>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item py-0"><a href="#myPage" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item"><a href="#tour" class="nav-link">KONZERTE</a>
+                </li>
+                <li class="nav-item"><a href="#news" class="nav-link">NEUIGKEITEN</a>
+                </li>
+                <li class="nav-item"><a href="#contact" class="nav-link">KONTAKT</a>
+                </li>
+                <li class="active nav-item"><a href="pages/about.html" class="nav-link">&#xDC;BER UNS</a>
+                </li>
+                <li class="dropdown nav-item"> <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">MEHR
+
+      <span class="caret"></span></a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li class="dropdown-item"><a href="pages/donation.html">UNTERST&#xDC;TZEN</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </nav>
+
 
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
@@ -59,45 +62,46 @@
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
-
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="styles/pictures/title.jpg" alt="New York" width="1200" height="700">
+            <div class="item active carousel-item">
+                <img src="styles/pictures/title.jpg" alt="New York">
                 <div class="carousel-caption">
                     <h3> </h3>
                     <p></p>
                 </div>
             </div>
-
-            <div class="item">
-                <img src="styles/pictures/border01.jpg" alt="New York" width="1200" height="700">
+            <div class="item carousel-item">
+                <img src="styles/pictures/border01.jpg" alt="New York">
                 <div class="carousel-caption">
                     <h3>Crossing Border 2017</h3>
                     <p></p>
                 </div>
             </div>
-
-
-            <div class="item">
-                <img src="styles/pictures/stair.jpg" alt="New York" width="1200" height="700">
+            <div class="item carousel-item">
+                <img src="styles/pictures/stair.jpg" alt="New York">
                 <div class="carousel-caption">
                     <h3>Das Orchester</h3>
                     <p></p>
                 </div>
             </div>
         </div>
+        <!-- Left and right controls --><a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
 
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+
             <span class="sr-only">Previous</span>
+
         </a>
         <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+
             <span class="sr-only">Next</span>
+
         </a>
     </div>
+
 
     <div class="container text-center">
         <h3>BABYLON ORCHESTRA</h3>
@@ -114,64 +118,68 @@
         </p>
         <br>
     </div>
-    <!-- Container (TOUR Section) -->
+
+    <!-- TOUR (News  Section) -->
     <div id="tour" class="bg-1">
         <div class="container">
             <h3 class="text-center">KONZERTE</h3>
-            <p class="text-center">Wir spielen auch bald in Ihrer nähe<br> Sichern Sie sich Ihre Tickets.</p>
-
+            <p class="text-center">Wir spielen auch bald in Ihrer n&#xE4;he
+                <br>Sichern Sie sich Ihre Tickets.</p>
             <div class="row text-center">
-
-                <div class="col-sm-4">
-                    <div class="thumbnail">
-                        <img src="styles/pictures/concert/passion.jpg" alt="San Francisco" height="100">
-                        <p><strong>Passionskirche</strong></p>
-                        <p>Freitag, 08.06.2018<br>Marheinekepl. 1, 10961 Berlin
+                <div class="col-md-4 ">
+                    <div class="thumbnail bg-light">
+                        <img src="styles/pictures/concert/passion.jpg" alt="San Francisco" height="280">
+                        <p><strong>Passionskirche</strong>
                         </p>
+                        <p>Freitag, 08.06.2018
+                            <br>Marheinekepl. 1, 10961 Berlin</p>
                         <button class="btn" data-toggle="modal" data-target="#modal2">Tickets</button>
                     </div>
                 </div>
-
-                <div class="col-sm-4">
-                    <div class="thumbnail">
-                        <img src="styles/pictures/concert/concert.png" alt="Paris" width="400" height="100">
-                        <p><strong>Märkisches Museum</strong></p>
+                <div class="col-md-4">
+                    <div class="thumbnail bg-light">
+                        <img src="styles/pictures/concert/concert.png" alt="Paris" height="280">
+                        <p><strong>M&#xE4;rkisches Museum</strong>
+                        </p>
                         <p>Babylon Orchestra Soloists</p>
-                        <p>Sonntag, 10.06.2018 <br>Am Köllnischen Park 5, 10179 Berlin</p>
+                        <p>Sonntag, 10.06.2018
+                            <br>Am K&#xF6;llnischen Park 5, 10179 Berlin</p>
                         <button class="btn" data-toggle="modal" data-target="#modal1">Tickets</button>
                     </div>
                 </div>
-
-                <div class="col-sm-4">
-                    <div class="thumbnail">
-                        <img src="styles/pictures/concert/werkstatt.jpg" alt="Paris" width="400" height="100">
-                        <p><strong>Werkstatt der Kulturen </strong></p>
+                <div class="col-md-4">
+                    <div class="thumbnail bg-light ">
+                        <img src="styles/pictures/concert/werkstatt.jpg" alt="Paris" height="280">
+                        <p><strong>Werkstatt der Kulturen </strong>
+                        </p>
                         <p>Babylon Orchestra Soloists</p>
-                        <p>Freitag, 06.07.2018 <br>Wissmannstraße 32, 12049 Berlin</p>
+                        <p>Freitag, 06.07.2018
+                            <br>Wissmannstra&#xDF;e 32, 12049 Berlin</p>
                         <button class="btn" data-toggle="modal" data-target="#modal1">Tickets</button>
                     </div>
                 </div>
-
             </div>
+            <br>
 
             <div class="row text-center">
-
-                <div class="col-sm-4">
-                    <div class="thumbnail">
-                        <img src="styles/pictures/concert/VillaE.jpg" alt="San Francisco" height="100">
-                        <p><strong>Villa Elisabeth</strong></p>
-                        <p>Samstag, 01.09.2018<br> Invalidenstraße 3, 10115 Berlin
+                <div class="col-md-4">
+                    <div class="thumbnail bg-light">
+                        <img src="styles/pictures/concert/VillaE.jpg" alt="San Francisco" height="280">
+                        <p><strong>Villa Elisabeth</strong>
                         </p>
+                        <p>Samstag, 01.09.2018
+                            <br>Invalidenstra&#xDF;e 3, 10115 Berlin</p>
                         <button class="btn" data-toggle="modal" data-target="#modal3">Tickets</button>
                     </div>
                 </div>
-
-                <div class="col-sm-4">
-                    <div class="thumbnail">
-                        <img src="styles/pictures/concert/concert.png" alt="Paris" width="400" height="100">
-                        <p><strong>Märkisches Museum</strong></p>
+                <div class="col-md-4">
+                    <div class="thumbnail bg-light">
+                        <img src="styles/pictures/concert/concert.png" alt="Paris" height="280">
+                        <p><strong>M&#xE4;rkisches Museum</strong>
+                        </p>
                         <p>Babylon Orchestra Soloists</p>
-                        <p>Samstag, 20.10.2018 <br>Am Köllnischen Park 5, 10179 Berlin</p>
+                        <p>Samstag, 20.10.2018
+                            <br>Am K&#xF6;llnischen Park 5, 10179 Berlin</p>
                         <button class="btn" data-toggle="modal" data-target="#modal1">Tickets</button>
                     </div>
                 </div>
@@ -181,12 +189,10 @@
     <!-- Modal -->
     <div class="modal fade" id="modal1" role="dialog">
         <div class="modal-dialog">
-
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">×</button>
-                    <h4><span class="glyphicon glyphicon-tags"></span>Tickets</h4>
+                    <h4>Tickets</h4>
                 </div>
                 <div class="modal-body">
                     <div class="blackFont">
@@ -194,38 +200,34 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
-            <span class="glyphicon glyphicon-remove"></span> Cancel
-          </button>
-                    <p>Need <a href="#">help?</a></p>
+                    <button type="submit" class="btn btn-danger btn-secondary float-left" data-dismiss="modal"> <span class="glyphicon glyphicon-remove"></span> Cancel</button>
+                    <p>Need <a href="#">help?</a>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-
     <!-- Modal -->
     <div class="modal fade" id="modal2" role="dialog">
         <div class="modal-dialog">
-
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">×</button>
-                    <h4><span class="glyphicon glyphicon-tags"></span> Tickets</h4>
+                    <h4>Tickets</h4>
                 </div>
                 <div class="modal-body">
                     <div class="blackFont">
                         <p>Sichern Sie sich Ihre Karten direkt online</p>
-
                         <span class="glyphicon glyphicon-home" style="display:inline-block; width: 2em;"></span>
-                        <tab indent=20> <a href="http://www.akanthus.de/de/veranstaltungen/eventeinzelheiten/1172/-/babylon-orchestra">Online</a>
+                        <tab indent="20"> <a href="http://www.akanthus.de/de/veranstaltungen/eventeinzelheiten/1172/-/babylon-orchestra">Online</a>
+                        </tab>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
-            <span class="glyphicon glyphicon-remove"></span> Cancel
-          </button>
-                    <p>Need <a href="#">help?</a></p>
+                    <button type="submit" class="btn btn-danger btn-secondary float-left" data-dismiss="modal">
+                      <span class="glyphicon glyphicon-remove"></span> Cancel</button>
+                    <p>Need <a href="#">help?</a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -233,12 +235,10 @@
     <!-- Modal -->
     <div class="modal fade" id="modal3" role="dialog">
         <div class="modal-dialog">
-
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">×</button>
-                    <h4><span class="glyphicon glyphicon-tags"></span> Tickets</h4>
+                    <h4>Tickets</h4>
                 </div>
                 <div class="modal-body">
                     <div class="blackFont">
@@ -246,15 +246,15 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
-            <span class="glyphicon glyphicon-remove"></span> Cancel
-          </button>
-                    <p>Need <a href="#">help?</a></p>
+                    <button type="submit" class="btn btn-danger btn-secondary float-left" data-dismiss="modal">
+                      <span class="glyphicon glyphicon-remove"></span> Cancel</button>
+                    <p>Need <a href="#">help?</a>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-    </div>
+
 
     <!-- Container (News  Section) -->
     <div id="news" class="container">
@@ -430,7 +430,8 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
             {
                 $("html,body").animate(
                 {
-                    scrollTop: $(".thetop").offset().top
+                    scrollTop: $(".thetop").offset()
+                        .top
                 }, "900");
                 return false
             })
