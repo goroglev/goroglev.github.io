@@ -91,6 +91,11 @@
      border-bottom-left-radius: 0;
  }
 
+ .img-thumbnail {
+     padding: 0;
+     border: 0px;
+ }
+
  .thumbnail {
      padding: 0 0 15px 0;
      border: none;
