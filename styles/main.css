@@ -94,6 +94,7 @@
  .img-thumbnail {
      padding: 0;
      border: 0px;
+     border-radius: 0;
  }
 
  .thumbnail {
