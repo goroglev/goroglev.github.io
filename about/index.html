@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
     />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+        integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+        crossorigin="anonymous">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -29,9 +30,13 @@
 
 <body id="aboutPage" data-spy="scroll" data-target=".navbar" data-offset="50px">
     <div class='thetop'></div>
-    <nav class="navbar navbar-dark fixed-top navbar-expand  p-1 ">
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar"></button>
-        <a class="navbar-brand" href="../"><img src="../styles/pictures/logoNoW.png" alt="" width="25" height="25"></a>
+    <nav class="navbar navbar-dark fixed-top navbar-expand-lg">
+        <a class="navbar-brand" href="../">
+            <img src="../styles/pictures/logoNoW.png" alt="" width="25" height="25">
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+          <i class="fas fa-bars"></i>
+        </button>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item py-0"><a href="../" class="nav-link">HOME</a>
@@ -44,20 +49,24 @@
                 </li>
                 <li class="active nav-item"><a href="#aboutPage" class="nav-link">&#xDC;BER UNS</a>
                 </li>
-                <li class="dropdown nav-item"> <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">MEHR
-
-      <span class="caret"></span></a>
+                <li class="dropdown nav-item">
+                    <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">MEHR
+                    </a>
                     <ul class="dropdown-menu dropdown-menu-right">
-                        <li class="dropdown-item"><a href="../support">UNTERST&#xDC;TZEN</a>
+                        <li class="dropdown-item">
+                            <a href="../support">UNTERST&#xDC;TZEN</a>
                         </li>
                     </ul>
                 </li>
             </ul>
         </div>
     </nav>
-    <nav class="navbar navbar-light fixed-top fixed-top-2 navbar-expand-md py-0">
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">&#x2630;</button>
-        <div class="collapse navbar-collapse" id="myNavbar">
+    <nav class="navbar navbar-light fixed-top fixed-top-2 navbar-expand-lg">
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#myNavbar2"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="myNavbar2">
             <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item"><a href="#band" class="nav-link">ORCHESTER</a>
                 </li>
