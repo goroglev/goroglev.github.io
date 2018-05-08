@@ -55,6 +55,16 @@
      margin: auto;
  }
  
+ .carousel:hover .carousel-control-next,
+ .carousel:hover .carousel-control-prev {
+     visibility: visible;
+ }
+ 
+ .carousel-control-next,
+ .carousel-control-prev {
+     visibility: hidden;
+ }
+ 
  .carousel-caption h3 {
      color: #fff !important;
  }
