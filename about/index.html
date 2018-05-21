@@ -1,66 +1,8 @@
-<!DOCTYPE html>
-
-<html lang="en">
-
-<head>
-    <title>Babylon Orchster</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
-    />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
-        integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
-        crossorigin="anonymous">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
-
-    <link href="../styles/main.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
-</head>
+---
+layout: default
+---
 
 
-
-<body id="aboutPage" data-spy="scroll" data-target=".navbar" data-offset="50px">
-    <div class='thetop'></div>
-    <nav class="navbar navbar-dark fixed-top navbar-expand-lg">
-        <a class="navbar-brand" href="../">
-            <img src="../styles/pictures/logoNoW.png" alt="" width="25" height="25">
-        </a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item py-0"><a href="../" class="nav-link">HOME</a>
-                </li>
-                <li class="nav-item"><a href="../#tour" class="nav-link">KONZERTE</a>
-                </li>
-                <li class="nav-item"><a href="../#news" class="nav-link">NEUIGKEITEN</a>
-                </li>
-                <li class="nav-item"><a href="../#contact" class="nav-link">KONTAKT</a>
-                </li>
-                <li class="active nav-item"><a href="#aboutPage" class="nav-link">&#xDC;BER UNS</a>
-                </li>
-                <li class="dropdown nav-item">
-                    <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">MEHR
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-right">
-                        <li class="dropdown-item">
-                            <a href="../support">UNTERST&#xDC;TZEN</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </nav>
     <nav class="navbar navbar-light fixed-top fixed-top-2 navbar-expand-lg">
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#myNavbar2"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -566,60 +508,45 @@
 
     </div>
 
-
-    <!-- Footer -->
-    <footer class="text-center">
-        <a href="../imprint">Impressum</a>
-        <p>webdesign by huy le duc</p>
-    </footer>
-
-    <div class='scrolltop'>
-        <div class='scroll icon'>NACH<br>OBEN</div>
-    </div>
     <script>
-        $(window).scroll(function()
+        $(document).ready(function()
         {
-            if ($(this).scrollTop() > 50)
-            {
-                $('.scrolltop:hidden').stop(true, true).fadeIn();
-            }
-            else
-            {
-                $('.scrolltop').stop(true, true).fadeOut();
-            }
-        });
-        $(function()
-        {
-            $(".scroll").click(function()
-            {
-                $("html,body").animate(
+            // Initialize Tooltip
+            $('[data-toggle="tooltip"]').tooltip();
+
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".fixed-top-2 a, footer a[href='#myPage']").on(
+                'click',
+                function(event)
                 {
-                    scrollTop: $(".thetop").offset().top
-                }, "900");
-                return false
-            })
+
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "")
+                    {
+
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+
+                        // Store hash
+                        var hash = this.hash;
+
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate(
+                        {
+                            scrollTop: $(
+                                    hash)
+                                .offset()
+                                .top
+                        }, 900, function()
+                        {
+
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location
+                                .hash =
+                                hash;
+                        });
+                    } // End if
+                });
         })
     </script>
-    <script>
-        $('.test, .nav-link, .navbar-brand, .new-button').click(function()
-        {
-            var sectionTo = $(this).attr('href');
-            $('html, body').animate(
-            {
-                scrollTop: $(sectionTo).offset().top
-            }, 900);
-        });
-    </script>
-    <script>
-        $(document).on('click', '[data-toggle="lightbox"]', function(event)
-        {
-            event.preventDefault();
-            $(this).ekkoLightbox(
-            {});
-        });
-    </script>
-
-</body>
-
-
-</html>

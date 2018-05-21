@@ -1,778 +1,376 @@
-<!DOCTYPE html>
+---
+layout: default
+---
 
-<html lang="en">
-
-<head>
-    <title>Babylon Orchster</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
-    />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
-        integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
-        crossorigin="anonymous">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-    <link href="styles/main.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-</head>
-
-
-
-<body id="top" data-spy="scroll" data-target=".navbar" data-offset="50">
-    <div class='thetop'></div>
-
-    <nav class="navbar navbar-dark fixed-top navbar-expand-lg ">
-        <a class="navbar-brand" href="./">
-            <img src="styles/pictures/logoNoW.png" alt="" width="25" height="25">
-        </a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
-        <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item py-0"><a href="#top" class="nav-link">HOME</a>
-                </li>
-                <li class="nav-item"><a href="#tour" class="nav-link">KONZERTE</a>
-                </li>
-                <li class="nav-item"><a href="#news" class="nav-link">NEUIGKEITEN</a>
-                </li>
-                <li class="nav-item"><a href="#contact" class="nav-link">KONTAKT</a>
-                </li>
-                <li class="nav-item"><a href="./about" class="nav-link">&#xDC;BER UNS</a>
-                </li>
-                <li class="dropdown nav-item">
-                    <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">MEHR
-      <span class="caret"></span></a>
-                    <ul class="dropdown-menu dropdown-menu-right">
-                        <li class="dropdown-item"><a href="./support">UNTERST&#xDC;TZEN</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active carousel-item">
-                <img src="styles/pictures/title.jpg" alt="New York">
-                <div class="carousel-caption">
-                    <h3> </h3>
-                    <p></p>
-                </div>
-            </div>
-            <div class="item carousel-item">
-                <img src="styles/pictures/border02.jpg" alt="New York">
-                <div class="carousel-caption">
-                    <h3>Crossing Border 2017</h3>
-                    <p></p>
-                </div>
-            </div>
-            <div class="item carousel-item">
-                <img src="styles/pictures/stair.jpg" alt="New York">
-                <div class="carousel-caption">
-                    <h3>Das Orchester</h3>
-                    <p></p>
-                </div>
-            </div>
-            <!-- Left and right controls -->
-            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active carousel-item">
+      <img src="styles/pictures/title.jpg" alt="New York">
+      <div class="carousel-caption">
+        <h3> </h3>
+        <p></p>
+      </div>
+    </div>
+    <div class="item carousel-item">
+      <img src="styles/pictures/border02.jpg" alt="New York">
+      <div class="carousel-caption">
+        <h3>Crossing Border 2018</h3>
+        <p></p>
+      </div>
+    </div>
+    <div class="item carousel-item">
+      <img src="styles/pictures/stair.jpg" alt="New York">
+      <div class="carousel-caption">
+        <h3>Das Orchester</h3>
+        <p></p>
+      </div>
+    </div>
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
+  </div>
+
+</div>
+
+
+<div class="container text-center">
+  <h3>BABYLON ORCHESTRA</h3>
+  <p><em>Orient trifft Okzident - im Herzen Berlins</em></p>
+  <p align="justify">
+    Nachdem das Babylon ORCHESTRA mit seinem Projekt "crossing borders- Musik
+    überwindet Grenzen" ausgewählt wurde, 2017 von dem Berliner Projektfond für
+    Kulturelle Bildung gefördert zu werden und unser Kooperationspartner das
+    BTMK (Konservatorium für türkische Musik Berlin) uns bei diesem Projekt
+    unterstützt hat, freuen wir uns, mitzuteilen, dass wir unsere Kooperation
+    2018 erfolgreich fortführen : Das Projekt „Foreign Rhythms - Baladi Gharib“
+    erhält Förderung durch den Arab Fund for Arts and Culture -
+    <a target="_blank"
+    href="http://arabculturefund.org/grantees/grantee.php?id=890">arabculturefund</a>
+    </p>
+  <br>
+</div>
+
+<!-- TOUR (News  Section) -->
+<div id="tour" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">KONZERTE</h3>
+    <p class="text-center">Wir spielen auch bald in Ihrer n&#xE4;he
+      <br>Sichern Sie sich Ihre Tickets.</p>
+
+    <div class="row text-center">
+      {% for concert in site.concert %}
+
+
+      <div class="col-md-4 ">
+        <div class="thumbnail bg-light ">
+          <img src="{{concert.image_path}}" class="img-thumbnail" alt="San Francisco" height="280">
+          <p><strong>{{concert.venue }}</strong>
+          </p>
+          <p>{{concert.concert_date}}
+          </p>
+          <button class="btn" data-toggle="modal" data-target="#{{concert.id}}">Details</button>
         </div>
 
-    </div>
-
-
-    <div class="container text-center">
-        <h3>BABYLON ORCHESTRA</h3>
-        <p><em>Orient trifft Okzident - im Herzen Berlins</em></p>
-        <p align="justify">
-            Nachdem das Babylon ORCHESTRA mit seinem Projekt "crossing borders- Musik überwindet
-            Grenzen" ausgewählt wurde, 2017 von dem Berliner Projektfond für Kulturelle
-            Bildung gefördert zu werden und unser Kooperationspartner das BTMK
-            (Konservatorium für türkische Musik Berlin) uns bei diesem Projekt
-            unterstützt hat, freuen wir uns, mitzuteilen, dass wir unsere Kooperation
-            2018 erfolgreich fortführen : Das Projekt „Foreign Rhythms - Baladi
-            Gharib“ erhält Förderung durch den Arab Fund for Arts and Culture -
-            <a target="_blank" href="http://arabculturefund.org/grantees/grantee.php?id=890">arabculturefund</a>
-        </p>
-        <br>
-    </div>
-
-    <!-- TOUR (News  Section) -->
-    <div id="tour" class="bg-1">
-        <div class="container">
-            <h3 class="text-center">KONZERTE</h3>
-            <p class="text-center">Wir spielen auch bald in Ihrer n&#xE4;he
-                <br>Sichern Sie sich Ihre Tickets.</p>
-
-            <div class="row text-center">
-
-                <div class="col-md-4 ">
-                    <div class="thumbnail bg-light ">
-                        <img src="styles/pictures/concert/concert.png" class="img-thumbnail" alt="San Francisco"
-                            height="280">
-                        <p><strong>Kulturvolk-Berlin </strong>
-                        </p>
-                        <p>Montag, 28.06.2018
-                        </p>
-                        <button class="btn" data-toggle="modal" data-target="#modal11">Details</button>
-                    </div>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="modal11" role="dialog">
-                        <div class="modal-dialog">
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4 class="text-center">Details</h4>
-                                </div>
-                                <div class="modal-body blackFont">
-                                    <p><i class="fas fa-location-arrow"></i> Ruhrstr.
-                                        6, 10709 Berlin
-                                    </p>
-                                    <p>Sichern Sie sich Ihre Karten direkt
-                                        <a target="_blank" href="
-                                          https://www.kulturvolk.de/montagskultur">
-                                          Online</a>
-                                    </p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="submit" class="btn btn-danger btn-secondary float-left" data-dismiss="modal">
-                       Cancel</button>
-                                    <p>Need <a href="#">help?</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-4 ">
-                    <div class="thumbnail bg-light ">
-                        <img src="styles/pictures/concert/passion.jpg" class="img-thumbnail" alt="San Francisco"
-                            height="280">
-                        <p><strong>Passionskirche</strong>
-                        </p>
-                        <p>Freitag, 08.06.2018
-                        </p>
-                        <button class="btn" data-toggle="modal" data-target="#modal1">Details</button>
-                    </div>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="modal1" role="dialog">
-                        <div class="modal-dialog">
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4 class="text-center">Details</h4>
-                                </div>
-                                <div class="modal-body blackFont">
-                                    <p><i class="fas fa-location-arrow"></i>
-                                        <a href="https://goo.gl/maps/FHHoXXZ1dJz">Marheinekepl. 1, 10961 Berlin </a>
-                                    </p>
-                                    <p>Sichern Sie sich Ihre Karten direkt
-                                        <a target="_blank" href="http://www.akanthus.de/de/veranstaltungen/eventeinzelheiten/1172/-/babylon-orchestra">
-                                          Online</a>
-                                    </p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="submit" class="btn btn-danger btn-secondary float-left" data-dismiss="modal">
-                       Cancel</button>
-                                    <p>Need <a href="#">help?</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="thumbnail bg-light">
-                        <img src="styles/pictures/concert/concert.png" class="img-thumbnail" alt="Paris"
-                            height="280">
-                        <p><strong>M&#xE4;rkisches Museum</strong>
-                        </p>
-                        <p>Sonntag, 10.06.2018
-                        </p>
-                        <button class="btn" data-toggle="modal" data-target="#modal2">Details</button>
-                    </div>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="modal2" role="dialog">
-                        <div class="modal-dialog">
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header text-center">
-                                    <h4>Details</h4>
-                                </div>
-                                <div class="modal-body blackFont">
-                                    <h5>Babylon Orchestra Soloists </h5>
-                                    <p><i class="fas fa-location-arrow"></i> Am K&#xF6;llnischen
-                                        Park 5, 10179 Berlin</p>
-                                    </p>
-                                    <p>Vorverkauf wird noch bekannt gegeben.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="submit" class="btn btn-danger btn-secondary float-left" data-dismiss="modal">
-                      </span> Cancel</button>
-                                    <p>Need <a href="#">help?</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <br>
-
-
-            <div class="row text-center">
-
-
-                <div class="col-md-4">
-                    <div class="thumbnail bg-light ">
-                        <img src="styles/pictures/concert/werkstatt.jpg" class="img-thumbnail" alt="Paris"
-                            height="280">
-                        <p><strong>Werkstatt der Kulturen </strong>
-                        </p>
-                        <p>Freitag, 06.07.2018
-                        </p>
-                        <button class="btn" data-toggle="modal" data-target="#modal3">Details</button>
-                    </div>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="modal3" role="dialog">
-                        <div class="modal-dialog">
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4>Details</h4>
-                                </div>
-                                <div class="modal-body blackFont">
-
-                                    <h5>Babylon Orchestra Soloists </h5>
-                                    <p><i class="fas fa-location-arrow"></i> Wissmannstra&#xDF;e
-                                        32, 12049 Berlin
-                                    </p>
-                                    <p>Vorverkauf wird noch bekannt gegeben.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="submit" class="btn btn-danger btn-secondary float-left" data-dismiss="modal">
-                      <span class="glyphicon glyphicon-remove"></span> Cancel</button>
-                                    <p>Need <a href="#">help?</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-4">
-                    <div class="thumbnail bg-light">
-                        <img src="styles/pictures/concert/VillaE.jpg" alt="San Francisco" class="img-thumbnail"
-                            height="280">
-                        <p><strong>Villa Elisabeth</strong>
-                        </p>
-                        <p>Samstag, 01.09.2018
-                        </p>
-                        <button class="btn" data-toggle="modal" data-target="#modal4">Details</button>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="modal4" role="dialog">
-                        <div class="modal-dialog">
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4>Details</h4>
-                                </div>
-                                <div class="modal-body blackFont">
-
-                                    <p><i class="fas fa-location-arrow"></i> Invalidenstra&#xDF;e
-                                        3, 10115 Berlin
-                                    </p>
-
-                                    <p>Wird noch bekannt gegeben.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="submit" class="btn btn-danger btn-secondary float-left" data-dismiss="modal">
-                      <span class="glyphicon glyphicon-remove"></span> Cancel</button>
-                                    <p>Need <a href="#">help?</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-4">
-                    <div class="thumbnail bg-light">
-                        <img src="styles/pictures/concert/concert.png" alt="San Francisco" class="img-thumbnail"
-                            height="280">
-                        <p><strong>HAU 1</strong>
-                        </p>
-                        <p>Mittwoch, 17.10.2018
-                        </p>
-                        <button class="btn" data-toggle="modal" data-target="#modal6">Details</button>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="modal6" role="dialog">
-                        <div class="modal-dialog">
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4>Details</h4>
-                                </div>
-                                <div class="modal-body blackFont">
-
-                                    <p><i class="fas fa-location-arrow"></i> Stresemannstr.
-                                        29, 10963 Berlin
-                                    </p>
-
-                                    <p>Wird noch bekannt gegeben.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="submit" class="btn btn-danger btn-secondary float-left" data-dismiss="modal">
-                      <span class="glyphicon glyphicon-remove"></span> Cancel</button>
-                                    <p>Need <a href="#">help?</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <br>
-
-            <div class="row text-center">
-
-                <div class="col-md-4">
-                    <div class="thumbnail bg-light">
-                        <img src="styles/pictures/concert/concert.png" alt="San Francisco" class="img-thumbnail"
-                            height="280">
-                        <p><strong>
-                          Tischlerei 
-                        </strong>
-                        </p>
-                        <p>Samstag, 24.11.2018
-                        </p>
-                        <button class="btn" data-toggle="modal" data-target="#modal7">Details</button>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="modal7" role="dialog">
-                        <div class="modal-dialog">
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4>Details</h4>
-                                </div>
-                                <div class="modal-body blackFont">
-
-                                    <p>
-
-                                        <i class="fas fa-location-arrow"></i> Bismarckstraße
-                                        35, 10627 Berlin-Charlottenburg
-                                    </p>
-
-                                    <p>
-                                        <a target="_blank" href="https://www.deutscheoperberlin.de/de_DE/calendar/lieder-zwischen-euphrat-und-elbe.15308205">
-                                   Tickets
-                                    </a>
-                                    </p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="submit" class="btn btn-danger btn-secondary float-left" data-dismiss="modal">
-                      <span class="glyphicon glyphicon-remove"></span> Cancel</button>
-                                    <p>Need <a href="#">help?</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- Container (WORKSHOP  Section) -->
-
-            <h3 class="text-center">WORKSHOP</h3>
-            <p class="text-center">
-                Nehmen Sie teil an einem unserer Workshops
-            </p>
-
-            <div class="row text-center">
-
-
-                <div class="col-md-4">
-                    <div class="thumbnail bg-light">
-                        <img src="styles/pictures/concert/workshop.png" alt="San Francisco" class="img-thumbnail"
-                            height="280">
-                        <p><strong>
-                          New arabic poetry
-                        </strong>
-                        </p>
-                        <p>Samstag, 09.06.2018
-                        </p>
-                        <button class="btn" data-toggle="modal" data-target="#w1">Details</button>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="w1" role="dialog">
-                        <div class="modal-dialog">
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4>Details</h4>
-                                </div>
-                                <div class="modal-body blackFont">
-
-                                    <p>
-
-                                        <h2>
-                                          New arabic poetry
-                                    </h2>
-                                        <i class="fas fa-location-arrow"></i> BTMK,
-                                        Bergmannstraße 29, 10961 Berlin
-                                    </p>
-
-
-                                    <p>
-                                        16-18 Uhr <br> (kostenloser Eintritt)
-                                        <br> Anmeldung per Email
-                                    </p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="submit" class="btn btn-danger btn-secondary float-left" data-dismiss="modal">
-                      <span class="glyphicon glyphicon-remove"></span> Cancel</button>
-                                    <p>Need <a href="#">help?</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-4">
-                    <div class="thumbnail bg-light">
-                        <img src="styles/pictures/concert/workshop.png" alt="San Francisco" class="img-thumbnail"
-                            height="280">
-                        <p><strong>
-                          New Music In Syria
-                        </strong>
-                        </p>
-                        <p>Samstag, 11.06.2018
-                        </p>
-                        <button class="btn" data-toggle="modal" data-target="#w2">Details</button>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="w2" role="dialog">
-                        <div class="modal-dialog">
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4>Details</h4>
-                                </div>
-                                <div class="modal-body blackFont">
-                                    <h2> 
-                                      Maias Alyamani and new music in Syria
-                                    </h2>
-                                    <p>
-
-                                        <i class="fas fa-location-arrow"></i> BTMK,
-                                        Bergmannstraße 29, 10961 Berlin
-                                    </p>
-
-
-                                    <p>
-                                        19-21 Uhr <br> (kostenloser Eintritt)
-                                        <br> Anmeldung per Email
-                                    </p>
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="submit" class="btn btn-danger btn-secondary float-left" data-dismiss="modal">
-                      <span class="glyphicon glyphicon-remove"></span> Cancel</button>
-                                    <p>Need <a href="#">help?</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- Container (News  Section) -->
-    <div id="news" class="container">
-        <h3 class="text-center">NEUIGKEITEN</h3>
-
-        <div class="row">
-            <div class="col-sm-6">
-                <img src="styles/pictures/hauptstadtFonds.jpg" class="img-fluid" alt="fonds" width="300">
-            </div>
-
-            <div class="col-sm-6">
-                <p align="justify">
-                    <strong>Förderung Babylon ORCHESTRA 2018</strong>
-
-                    <br> Das Babylon ORCHESTRA freut sich, für das nächste Jahr
-                    drei (!) Förderungen erhalten zu haben. Durch die Musikkulturen
-                    NRW des Kultursekretariats können subventionierte Konzerte
-                    in Nordrhein-Westfalen angeboten werden. Eine Förderung durch
-                    den Arab Culture Fund ermöglicht zwei Konzerte der Babylon
-                    ORCHESTRA soloists, bei denen vier neue Stücke von arabischen
-                    und persischen Komponisten in Auftrag gegeben werden und die
-                    Komponisten Workshops zu orientalischer Musik für Interessierte
-                    und Profimusiker anbieten können. Die besonders großzügige
-                    Unterstützung des Hauptstadkulturfond in Berlin letztendlich
-                    erlaubt uns ein umfassendes genreübregreifendes Projekt, das
-                    musikalisch und literarisch neue Wege beschreitet. In 4 Konzerten
-                    und einem umfangreichen Rahmenprogramm können wir 7 Komponisten
-                    beauftragen neue Werke für die große Besetzung des BO zu schreiben
-                    und werden Texte von jungen Schrifstellern aus dem arabischen,
-                    persischen, türkischen und deutsche Kulturraum in Lesungen
-                    und als Vertonungen für Orchester und Stimme in Berlin vorstellen.
+        <!-- Modal -->
+        <div class="modal fade" id="{{concert.id}}" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="text-center">Details</h4>
+              </div>
+              <div class="modal-body blackFont">
+                <h2>{{concert.title}}</h2>
+                <p><i class="fas fa-location-arrow"></i> {{concert.address}}
                 </p>
-                <p><a target="_blank" href="http://nrw-kultur.de/de/programme/musikkulturen/programm_2018_19/babylon_orchestra_soloists/#/">Musikkulturen NRW:</a></p>
-                <p><a target="_blank" href="https://www.arabculturefund.org/grantees/grantee.php?id=890">Förderung durch AFAC (Arab Culture Fund)</a></p>
-                <p><a target="_blank" href="http://www.hauptstadtkulturfonds.berlin.de/fileadmin/PM/PM_HKF_II_-_2018.pdf">Förderung durch HKF (2018/II)</a></p>
-
+                <p>
+                  {{concert.details}}
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-danger btn-secondary
+                float-left" data-dismiss="modal"> Cancel</button> <p>Need <a
+                href="#">help?</a>
+                </p>
+              </div>
             </div>
+          </div>
         </div>
-        <br>
-
-        <div class="row">
-            <div class="col-sm-6">
-                <img src="styles/pictures/nrw.png" class="img-fluid" alt="fonds" width="300">
-            </div>
-
-            <div class="col-sm-6">
-                <p align="justify">
-                    <strong>Förderprogramms NRW Kultursekretariats </strong>
-                    <br>
-                    <p align="justify">Dank des
-                        <a target="_blank" href="http://nrw-kultur.de/en/programme/musikkulturen/programm_2018_19/babylon_orchestra_soloists/#/">Förderprogramms für Weltmusik „Musikkulturen“ des
-                        NRW Kultursekretariats </a> planen
-                        wir für 2018/2019 auch einige Auftritte in Nordrhein-Westfalen.
-                        Wir freuen uns bereits auf die Zusammenarbeit mit der mexikanischen
-                        Sängerin und Komponistin Diana Syrse. Sie wird die orientalischen
-                        Klänge und Sprachen unseres Orchesters um lateinamerikanische
-                        Rhythmen und Texte ergänzen. Am 16. Januar 2019 werden
-                        wir gemeinsam in der Rudolf-Oetker-Halle in Bielefeld auftreten.</p>
-
-
-            </div>
-        </div>
-        <br>
+      </div>
+      {% assign loopindex = forloop.index | modulo: 3 %} {% if loopindex == 0 %}
     </div>
-
-    <!-- Container (Contact Section) -->
-    <div id="contact" class="container">
-        <h3 class="text-center">KONTAKT</h3>
-        <p class="text-center"><em>We love our fans!</em></p>
-
-        <div class="row">
-            <div class="col-md-5">
-
-                <p> Sofia Surgutschowa und Mischa Tangian
-                    <br> Laubacher Straße 28 <br> 14197 Berlin
-                </p>
-                <p><i class="fas fa-phone"></i> +33 (0) 698 38 80 25 (Sofia) </p>
-                <p><i class="fas fa-phone"></i> +49 (0) 176 70081 541 (Mischa) </p>
-                <p><i class="fas fa-envelope"></i>
-                    <a href="mailto:info@babylonorchestra.com">info@babylonorchestra.com</a>
-                </p>
-            </div>
-        </div>
-        <br>
+    <br>
+    <div class="row text-center">
+      {% endif %}
+  {% endfor %}
 
     </div>
+    <br>
 
-    <div id="sponsors" class="container text-center">
-        <h3>Unsere Partner</h3>
+
+    <!-- Container (WORKSHOP  Section) -->
+
+    <h3 class="text-center">WORKSHOP</h3>
+    <p class="text-center">
+      Nehmen Sie teil an einem unserer Workshops
+    </p>
+
+    <div class="row text-center">
+      {% for workshop in site.workshop %}
+
+
+      <div class="col-md-4 ">
+        <div class="thumbnail bg-light ">
+          <img src="{{workshop.image_path}}" class="img-thumbnail" alt="San Francisco" height="280">
+          <p><strong>{{workshop.venue }}</strong>
+          </p>
+          <p>{{workshop.concert_date}}
+          </p>
+          <button class="btn" data-toggle="modal" data-target="#{{workshop.id}}">Details</button>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="{{workshop.id}}" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="text-center">Details</h4>
+              </div>
+              <div class="modal-body blackFont">
+                <h2>{{workshop.title}}</h2>
+                <p><i class="fas fa-location-arrow"></i> {{workshop.address}}
+                </p>
+                <p>
+                  {{workshop.details}}
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-danger btn-secondary
+                float-left" data-dismiss="modal"> Cancel</button> <p>Need <a
+                href="#">help?</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% assign loopindex = forloop.index | modulo: 3 %} {% if loopindex == 0 %}
+    </div>
+    <br>
+    <div class="row text-center">
+      {% endif %}
+  {% endfor %}
+
+    </div>
+    <br>
+
+
+  </div>
+</div>
+
+
+
+<!-- Container (News  Section) -->
+<div id="news" class="container">
+  <h3 class="text-center">NEUIGKEITEN</h3>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <img src="styles/pictures/hauptstadtFonds.jpg" class="img-fluid" alt="fonds" width="300">
+    </div>
+
+    <div class="col-sm-6">
+      <p align="justify">
+        <strong>Förderung Babylon ORCHESTRA 2018</strong>
+
+        <br> Das Babylon ORCHESTRA freut sich, für das nächste Jahr drei (!)
+        Förderungen erhalten zu haben. Durch die Musikkulturen NRW des
+        Kultursekretariats können subventionierte Konzerte in
+        Nordrhein-Westfalen angeboten werden. Eine Förderung durch den Arab
+        Culture Fund ermöglicht zwei Konzerte der Babylon ORCHESTRA soloists,
+        bei denen vier neue Stücke von arabischen und persischen Komponisten in
+        Auftrag gegeben werden und die Komponisten Workshops zu orientalischer
+        Musik für Interessierte und Profimusiker anbieten können. Die besonders
+        großzügige Unterstützung des Hauptstadkulturfond in Berlin letztendlich
+        erlaubt uns ein umfassendes genreübregreifendes Projekt, das musikalisch
+        und literarisch neue Wege beschreitet. In 4 Konzerten und einem
+        umfangreichen Rahmenprogramm können wir 7 Komponisten
+        beauftragen neue Werke für die große Besetzung des BO zu schreiben und
+        werden Texte von jungen Schrifstellern aus dem arabischen, persischen,
+        türkischen und deutsche Kulturraum in Lesungen und als Vertonungen für
+        Orchester und Stimme in Berlin vorstellen.
+      </p>
+      <p><a target="_blank" href="http://nrw-kultur.de/de/programme/musikkulturen/programm_2018_19/babylon_orchestra_soloists/#/">Musikkulturen NRW:</a></p>
+      <p><a target="_blank" href="https://www.arabculturefund.org/grantees/grantee.php?id=890">Förderung durch AFAC (Arab Culture Fund)</a></p>
+      <p><a target="_blank" href="http://www.hauptstadtkulturfonds.berlin.de/fileadmin/PM/PM_HKF_II_-_2018.pdf">Förderung durch HKF (2018/II)</a></p>
+
+    </div>
+  </div>
+  <br>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <img src="styles/pictures/nrw.png" class="img-fluid" alt="fonds" width="300">
+    </div>
+
+    <div class="col-sm-6">
+      <p align="justify">
+        <strong>Förderprogramms NRW Kultursekretariats </strong>
         <br>
+        <p align="justify">Dank des
+          <a target="_blank"
+          href="http://nrw-kultur.de/en/programme/musikkulturen/programm_2018_19/babylon_orchestra_soloists/#/">Förderprogramms
+          für Weltmusik „Musikkulturen“ des NRW Kultursekretariats </a> planen
+          wir für 2018/2019 auch einige Auftritte in Nordrhein-Westfalen. Wir
+          freuen uns bereits auf die Zusammenarbeit mit der mexikanischen
+          Sängerin und Komponistin Diana Syrse. Sie wird die
+          orientalischen Klänge und Sprachen unseres Orchesters um
+          lateinamerikanische Rhythmen und Texte ergänzen. Am 16. Januar 2019
+          werden wir gemeinsam in der Rudolf-Oetker-Halle in Bielefeld
+          auftreten.</p>
 
-        <p align="justify">
-            Ein Projekt wie das Babylon Orchestra ist nur realisierbar, wenn es viele Mitwirkende
-            gibt, die im Vorder- oder Hintergrund zum Gelingen beitragen. Kooperationspartner:
-        </p>
-        <br>
 
-        <a target="_blank" href="http://www.btmk.de/de/">
+    </div>
+  </div>
+  <br>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container">
+  <h3 class="text-center">KONTAKT</h3>
+  <p class="text-center"><em>We love our fans!</em></p>
+
+  <div class="row">
+    <div class="col-md-5">
+
+      <p> Sofia Surgutschowa und Mischa Tangian
+        <br> Laubacher Straße 28 <br> 14197 Berlin
+      </p>
+      <p><i class="fas fa-phone"></i> +33 (0) 698 38 80 25 (Sofia) </p>
+      <p><i class="fas fa-phone"></i> +49 (0) 176 70081 541 (Mischa) </p>
+      <p><i class="fas fa-envelope"></i>
+        <a href="mailto:info@babylonorchestra.com">info@babylonorchestra.com</a>
+      </p>
+    </div>
+  </div>
+  <br>
+
+</div>
+
+<div id="sponsors" class="container text-center">
+  <h3>Unsere Partner</h3>
+  <br>
+
+  <p align="justify">
+    Ein Projekt wie das Babylon Orchestra ist nur realisierbar, wenn es viele
+    Mitwirkende gibt, die im Vorder- oder Hintergrund zum Gelingen beitragen.
+    Kooperationspartner: </p>
+  <br>
+
+  <a target="_blank" href="http://www.btmk.de/de/">
             <img src="styles/pictures/sponsors/t_konservatorium.jpg" alt="fonds" width="300">
         </a>
-        <br>
+  <br>
 
-        <p align="justify">
-            Zu den zahlreichen Unterstützern des Babylon Orchestra zählen: </p>
-        <br>
+  <p align="justify">
+    Zu den zahlreichen Unterstützern des Babylon Orchestra zählen: </p>
+  <br>
 
-        <a target="_blank" href="http://www.efg-kreuzberg.de/">
+  <a target="_blank" href="http://www.efg-kreuzberg.de/">
             <img src="styles/pictures/sponsors/freikirche.png" class="img-fluid" alt="fonds"
                 width="300">
         </a>
-        <a target="_blank" href="http://gsbtb.org/#!/">
+  <a target="_blank" href="http://gsbtb.org/#!/">
             <img src="styles/pictures/sponsors/giveBack.jpg" class="img-fluid" alt="fonds"
                 width="300">
         </a>
-        <br>
+  <br>
 
-        <a target="_blank" href="http://kreuzberg-hilft.com/">
+  <a target="_blank" href="http://kreuzberg-hilft.com/">
             <img src="styles/pictures/sponsors/kreuzHilft.png" class="img-fluid" alt="fonds"
                 width="300">
         </a>
-        <p align="justify">
-            Unser besonderer Dank gilt Pastor Jonathan Scheer von der Evangelisch-Freikirchlichen
-            Gemeinde Berlin-Kreuzberg. Seit April 2016 ist es uns möglich wöchentlich
-            in dem Gottesdienst-Saal seiner Gemeinde zu proben.
+  <p align="justify">
+    Unser besonderer Dank gilt Pastor Jonathan Scheer von der
+    Evangelisch-Freikirchlichen Gemeinde Berlin-Kreuzberg. Seit April 2016 ist
+    es uns möglich wöchentlich in dem Gottesdienst-Saal seiner Gemeinde zu
+    proben.
 
-        </p>
-        <p align="justify">
-            Wir danken unseren finanziellen Förderern für Ihr Vertrauen und die großzügige
-            Unterstützung, die es uns ermöglicht unsere Projekte erfolgreich umzusetzen:
+  </p>
+  <p align="justify">
+    Wir danken unseren finanziellen Förderern für Ihr Vertrauen und die
+    großzügige Unterstützung, die es uns ermöglicht unsere Projekte erfolgreich
+    umzusetzen:
 
-        </p>
+  </p>
 
-        <a target="_blank" href="https://www.kubinaut.de/de/profile/projekte/crossing-borders/">
+  <a target="_blank" href="https://www.kubinaut.de/de/profile/projekte/crossing-borders/">
             <img src="styles/pictures/sponsors/kubinaut.jpg" alt="fonds" class="img-fluid"
                 class="img-fluid" width="200">
         </a>
-        <br>
-        <br>
+  <br>
+  <br>
 
-        <a target="_blank" href="http://www.hauptstadtkulturfonds.berlin.de/">
+  <a target="_blank" href="http://www.hauptstadtkulturfonds.berlin.de/">
             <img src="styles/pictures/sponsors/hauptstadtFonds.jpg" alt="fonds" class="img-fluid"
                 width="300">
         </a>
-        <p>
-            <a target="_blank" href="https://www.arabculturefund.org/home/index.php"><img src="styles/pictures/afac.png" class="img-fluid" alt="" width="720"></a>
-        </p>
-        <p>
-            <a target="_blank" href="http://www.kulturprojekte.berlin/"><img src="styles/pictures/projektfonds.jpg" alt="" class="img-fluid"
+  <p>
+    <a target="_blank" href="https://www.arabculturefund.org/home/index.php"><img src="styles/pictures/afac.png" class="img-fluid" alt="" width="720"></a>
+  </p>
+  <p>
+    <a target="_blank" href="http://www.kulturprojekte.berlin/"><img src="styles/pictures/projektfonds.jpg" alt="" class="img-fluid"
                     width="720"></a>
-        </p>
-    </div>
-    <!-- Add Google Maps -->
-    <!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
+  </p>
+</div>
+<script>
+  $(document).ready(function() {
+    // Initialize Tooltip
+    $('[data-toggle="tooltip"]').tooltip();
 
-    <!-- Footer -->
-    <footer class="text-center">
-        <a href="./imprint">Impressum</a>
-        <p>webdesign by huy le duc</p>
-    </footer>
-    <div class='scrolltop'>
-        <div class='scroll icon'>NACH<br>OBEN
-        </div>
-    </div>
-    <script>
-        $(window).scroll(function()
-        {
-            if ($(this).scrollTop() > 70)
-            {
-                $('.scrolltop:hidden').stop(true,
-                    true).fadeIn();
-            }
-            else
-            {
-                $('.scrolltop').stop(true, true).fadeOut();
-            }
-        });
-        $(function()
-        {
-            $(".scroll").click(function()
-            {
-                $("html,body").animate(
-                {
-                    scrollTop: $(
-                            ".thetop"
-                        ).offset()
-                        .top
-                }, "900");
-                return false
-            })
-        })
-    </script>
-    <script>
-        $(document).ready(function()
-        {
-            // Initialize Tooltip
-            $('[data-toggle="tooltip"]').tooltip();
+    // Add smooth scrolling to all links in navbar + footer link
+    $(".navbar a, footer a[href='#myPage']").on(
+      'click',
+      function(event) {
 
-            // Add smooth scrolling to all links in navbar + footer link
-            $(".navbar a, footer a[href='#myPage']").on(
-                'click',
-                function(event)
-                {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
 
-                    // Make sure this.hash has a value before overriding default behavior
-                    if (this.hash !== "")
-                    {
+          // Prevent default anchor click behavior
+          event.preventDefault();
 
-                        // Prevent default anchor click behavior
-                        event.preventDefault();
+          // Store hash
+          var hash = this.hash;
 
-                        // Store hash
-                        var hash = this.hash;
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(
+                hash)
+              .offset()
+              .top
+          }, 900, function() {
 
-                        // Using jQuery's animate() method to add smooth page scroll
-                        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-                        $('html, body').animate(
-                        {
-                            scrollTop: $(
-                                    hash)
-                                .offset()
-                                .top
-                        }, 900, function()
-                        {
-
-                            // Add hash (#) to URL when done scrolling (default click behavior)
-                            window.location
-                                .hash =
-                                hash;
-                        });
-                    } // End if
-                });
-        })
-    </script>
-
-</body>
-
-
-</html>
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location
+              .hash =
+              hash;
+          });
+        } // End if
+      });
+  })
+</script>
