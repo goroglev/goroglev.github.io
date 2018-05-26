@@ -73,7 +73,6 @@ layout: default
     <div class="row text-center">
       {% for concert in site.concert %}
 
-
       <div class="col-md-4 ">
         <div class="thumbnail bg-light ">
           <img src="{{concert.image_path}}" class="img-thumbnail" alt="San Francisco" height="280">
@@ -81,11 +80,11 @@ layout: default
           </p>
           <p>{{concert.concert_date}}
           </p>
-          <button class="btn" data-toggle="modal" data-target="#{{concert.id}}">Details</button>
+          <button class="btn" data-toggle="modal" data-target="#modal{{forloop.index}}">Details</button>
         </div>
 
         <!-- Modal -->
-        <div class="modal fade" id="{{concert.id}}" role="dialog">
+        <div class="modal fade" id="modal{{forloop.index}}" role="dialog">
           <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
@@ -139,11 +138,11 @@ layout: default
           </p>
           <p>{{workshop.concert_date}}
           </p>
-          <button class="btn" data-toggle="modal" data-target="#{{workshop.id}}">Details</button>
+          <button class="btn" data-toggle="modal" data-target="#workshop{{forloop.index}}">Details</button>
         </div>
 
         <!-- Modal -->
-        <div class="modal fade" id="{{workshop.id}}" role="dialog">
+        <div class="modal fade" id="workshop{{forloop.index}}" role="dialog">
           <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
@@ -190,7 +189,7 @@ layout: default
 
   <div class="row">
     <div class="col-sm-6">
-      <img src="styles/pictures/hauptstadtFonds.jpg" class="img-fluid" alt="fonds" width="300">
+      <img src="styles/pictures/news/hauptstadtFonds.jpg" class="img-fluid" alt="fonds" width="300">
     </div>
 
     <div class="col-sm-6">
@@ -224,7 +223,7 @@ layout: default
 
   <div class="row">
     <div class="col-sm-6">
-      <img src="styles/pictures/nrw.png" class="img-fluid" alt="fonds" width="300">
+      <img src="styles/pictures/news/nrw.png" class="img-fluid" alt="fonds" width="300">
     </div>
 
     <div class="col-sm-6">
@@ -330,10 +329,10 @@ layout: default
                 width="300">
         </a>
   <p>
-    <a target="_blank" href="https://www.arabculturefund.org/home/index.php"><img src="styles/pictures/afac.png" class="img-fluid" alt="" width="720"></a>
+    <a target="_blank" href="https://www.arabculturefund.org/home/index.php"><img src="styles/pictures/sponsors/afac.png" class="img-fluid" alt="" width="720"></a>
   </p>
   <p>
-    <a target="_blank" href="http://www.kulturprojekte.berlin/"><img src="styles/pictures/projektfonds.jpg" alt="" class="img-fluid"
+    <a target="_blank" href="http://www.kulturprojekte.berlin/"><img src="styles/pictures/sponsors/projektfonds.jpg" alt="" class="img-fluid"
                     width="720"></a>
   </p>
 </div>

@@ -8,5 +8,4 @@ details:
   <a target="_blank" href="https://www.deutscheoperberlin.de/de_DE/calendar/lieder-zwischen-euphrat-und-elbe.15308205">
                                    Tickets
                                     </a>
-id: modal74
 ---

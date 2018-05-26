@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
     />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
         integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
         crossorigin="anonymous">
@@ -20,38 +20,41 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
 
     <link href={{ "/styles/main.css" | absolute_url }} rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href={{ "/favicon.ico" | absolute_url }} >
+    <link rel="shortcut icon" type="image/x-icon" href={{ "/favicon.ico" | absolute_url
+        }}>
 </head>
 
 <body id="top" data-spy="scroll" data-target=".navbar" data-offset="50">
     <div class='thetop'></div>
 
     <nav class="navbar navbar-dark fixed-top navbar-expand-lg ">
-        <a class="navbar-brand" href={{ "/"  | absolute_url }} >
-            <img src={{ "/styles/pictures/logoNoW.png"  | absolute_url }} alt="" width="25" height="25">
+        <a class="navbar-brand" href={{ "/" | absolute_url }}>
+            <img src={{ "/styles/pictures/logoNoW.png" | absolute_url }} alt="" width="25"
+                height="25">
         </a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
         <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item py-0"><a href={{ "/#top"  | absolute_url }} class="nav-link">HOME</a>
+                <li class="nav-item py-0"><a href={{ "/#top" | absolute_url }} class="nav-link">HOME</a>
                 </li>
-                <li class="nav-item"><a href={{ "/#tour"  | absolute_url }} class="nav-link">KONZERTE</a>
+                <li class="nav-item"><a href={{ "/#tour" | absolute_url }} class="nav-link">KONZERTE</a>
                 </li>
-                <li class="nav-item"><a href={{ "/#news"  | absolute_url }} class="nav-link">NEUIGKEITEN</a>
+                <li class="nav-item"><a href={{ "/#news" | absolute_url }} class="nav-link">NEUIGKEITEN</a>
                 </li>
-                <li class="nav-item"><a href={{ "/#contact"  | absolute_url }} class="nav-link">KONTAKT</a>
+                <li class="nav-item"><a href={{ "/#contact" | absolute_url }} class="nav-link">KONTAKT</a>
                 </li>
-                <li class="nav-item"><a href={{ "/about"  | absolute_url }} class="nav-link">&#xDC;BER UNS</a>
+                <li class="nav-item"><a href={{ "/about" | absolute_url }} class="nav-link">&#xDC;BER UNS</a>
                 </li>
                 <li class="dropdown nav-item">
                     <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">MEHR
       <span class="caret"></span></a>
                     <ul class="dropdown-menu dropdown-menu-right">
-                        <li class="dropdown-item"><a href={{ "/support"  | absolute_url }}>UNTERST&#xDC;TZEN</a>
+                        <li class="dropdown-item"><a href={{ "/support" | absolute_url }}>UNTERST&#xDC;TZEN</a>
                         </li>
                     </ul>
                 </li>
@@ -59,13 +62,13 @@
         </div>
     </nav>
 
-{{ content}}
+    {{ content}}
 
 
 
     <!-- Footer -->
     <footer class="text-center">
-        <a href={{ "/imprint"  | absolute_url }}>Impressum</a>
+        <a href={{ "/imprint" | absolute_url }}>Impressum</a>
         <p>webdesign by huy le duc</p>
     </footer>
     <div class='scrolltop'>
@@ -73,8 +76,7 @@
         </div>
     </div>
     <script>
-
-    <!-- TO TOP show on scroll down -->
+        <!-- TO TOP show on scroll down -->
         $(window).scroll(function()
         {
             if ($(this).scrollTop() > 70)
