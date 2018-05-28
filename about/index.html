@@ -60,14 +60,23 @@ layout: default
   </p>
 
   <p align="justify">
-    Die Förderung unseres Projektes „Foreign Rhythms - Baladi Gharib“ durch den Arab Funds for Arts and Culture ermöglicht es uns Anfang 2018 vier Kompositionsaufträge an arabische und persische Musiker zu vergeben. Die beiden aus Syrien stammenden Violinisten
-    und Komponisten MAias Alyamani und Ayman Hlal werden Workshops zu orientalischer Musik für Interessierte und Profimusiker anbieten.
+    Die Förderung unseres Projektes „Foreign Rhythms - Baladi Gharib“ durch den
+    Arab Funds for Arts and Culture ermöglicht es uns Anfang 2018 vier
+    Kompositionsaufträge an arabische und persische Musiker zu vergeben. Die
+    beiden aus Syrien stammenden Violinisten und Komponisten MAias Alyamani und
+    Ayman Hlal werden Workshops zu orientalischer Musik für Interessierte und
+    Profimusiker anbieten.
 
   </p>
 
   <p align="justify">
-    In unserem Projekt „Lieder zwischen Euphrat und Elbe - Neues zwischen den Strömen“ treffen Poesie und Literatur aus verschiedenen Kulturkreisen auf Musik. Sieben Komponisten sind eingeladen neue Stücke für die große Besetzung unseres Orchesters zu schreiben.
-    Zugleich bieten wir jungen Lyrikern und Schriftstellern aus dem arabischen, persischen und europäischen Kulturraum die Chance ihre Texte in Lesungen sowie als Vertonungen vorzustellen. Kostenlose öffentliche Workshops zu arabischer und persischer
+    In unserem Projekt „Lieder zwischen Euphrat und Elbe - Neues zwischen den
+    Strömen“ treffen Poesie und Literatur aus verschiedenen Kulturkreisen auf
+    Musik. Sieben Komponisten sind eingeladen neue Stücke für die große
+    Besetzung unseres Orchesters zu schreiben. Zugleich bieten wir jungen
+    Lyrikern und Schriftstellern aus dem arabischen, persischen und europäischen
+    Kulturraum die Chance ihre Texte in Lesungen sowie als Vertonungen
+    vorzustellen. Kostenlose öffentliche Workshops zu arabischer und persischer
     Lyrik und Musik runden das durch den Hauptstadkulturfonds unterstützte Projekt ab.
 
   </p>
@@ -85,16 +94,13 @@ layout: default
       <p><strong>{{member.name}}</strong>
       </p>
       <a href="#musician{{forloop.index}}" data-toggle="collapse">
-
-                    <img src="{{member.image_path}}" class="rounded-circle person"
+        <img src="{{member.image_path}}" class="rounded-circle person"
                         alt="Random Name" width="192" height="192">
-
-                </a>
+      </a>
       <div id="musician{{forloop.index}}" class="collapse">
         <p>{{member.task}} </p>
       </div>
     </div>
-
       {% assign loopindex = forloop.index | modulo: 4 %} {% if loopindex == 0 %}
     </div>
     <br>
@@ -139,6 +145,16 @@ layout: default
 <div id="gale" class="bg-1">
   <div class="container aboutContainer">
     <h3 class="text-center">GALERIE</h3>
+
+{% for image in site.static_files %}
+  {% if image.path contains 'styles/pictures/gallery/babylonAuswahl2' %}
+    {% unless image.path contains '.s' %}
+      <a href="..{{ image.path }}">
+        <img class="img-fluid" src="..{{ image.path }}.s" alt="">
+      </a>
+    {% endunless %}
+  {% endif %}
+{% endfor %}
 
     <div class="rowg">
       <div class="columng">
