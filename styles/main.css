@@ -173,12 +173,12 @@
          background-color: #ababab;
          font-family: 'Raleway', Montserrat, sans-serif;
          margin-bottom: 0;
-         font-size: 12px !important;
+         font-size: 11px !important;
          font-weight: 600;
          letter-spacing: 4px;
          opacity: 0.9;
          z-index: 1;
-         padding: 2pt 0;
+         padding: 1pt 0;
      }
 
      .fixed-top-2 li a,
