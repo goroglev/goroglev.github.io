@@ -32,8 +32,9 @@ layout: default
 
   <p align="justify">Die Idee zur Gründung des Orchesters kam uns als wir auf
   der Suche nach einer ganz persönlichen Antwort und Reaktion auf eine sich
-  verändernde Welt im Zusammenhang mit der Syrienkrise waren. </p> <p
-  align="justify">
+  verändernde Welt im Zusammenhang mit der Syrienkrise waren. </p>
+
+  <p  align="justify">
 
     Musik und die Verbindung von verschiedenen Musikkulturen interessieren uns
     sehr. Als Wahlberliner mit russischen Wurzeln haben wir selbst Erfahrung mit
@@ -45,39 +46,35 @@ layout: default
     ein weniger bekanntes Repertoire aus ihrer Heimat. So lernen sie sich
     untereinander besser kennen und bringen den Menschen in ihrem Gastland, die
     sie willkommen geheißen habe, ihre Kultur in Konzerten und auch zahlreichen
-    Workshops näher.
-  </p>
+    Workshops näher. </p>
 
-  <br>
-  <h3>Unsere Workshop-Reihen </h3>
-  <p align="justify">
-    Im Rahmen unseres Projektes „Crossing Borders – Musik überwindet Grenzen“
-    haben wir 2017 erfolgreich verschiedene Workshops für und mit unseren
-    Musikern für geladene Gäste organisiert. Profis und fortgeschrittenen
-    Amateuren u.a. aus Syrien, der Türkei und dem Iran wurde der Einstieg in die
-    deutsche Musikszene erleichtert.
+  <br> <h3>Unsere Workshop-Reihen </h3> <p align="justify"> Im Rahmen unseres
+  Projektes „Crossing Borders – Musik überwindet Grenzen“ haben wir 2017
+  erfolgreich verschiedene Workshops für und mit unseren Musikern für geladene
+  Gäste organisiert. Profis und fortgeschrittenen Amateuren u.a. aus Syrien, der
+  Türkei und dem Iran wurde der Einstieg in die deutsche Musikszene erleichtert.
 
   </p>
 
-  <p align="justify">
-    Die Förderung unseres Projektes „Foreign Rhythms - Baladi Gharib“ durch den
-    Arab Funds for Arts and Culture ermöglicht es uns Anfang 2018 vier
-    Kompositionsaufträge an arabische und persische Musiker zu vergeben. Die
-    beiden aus Syrien stammenden Violinisten und Komponisten MAias Alyamani und
-    Ayman Hlal werden Workshops zu orientalischer Musik für Interessierte und
-    Profimusiker anbieten.
+  <p align="justify"> Die Förderung unseres Projektes „Foreign Rhythms - Baladi
+  Gharib“ durch den Arab Funds for Arts and Culture ermöglicht es uns Anfang
+  2018 vier Kompositionsaufträge an arabische und persische Musiker zu vergeben.
+  Die beiden aus Syrien stammenden Violinisten und Komponisten MAias Alyamani
+  und Ayman Hlal werden Workshops zu orientalischer Musik für Interessierte und
+  Profimusiker anbieten.
 
   </p>
 
-  <p align="justify">
-    In unserem Projekt „Lieder zwischen Euphrat und Elbe - Neues zwischen den
-    Strömen“ treffen Poesie und Literatur aus verschiedenen Kulturkreisen auf
+  <p align="justify"> In unserem Projekt „Lieder zwischen Euphrat und Elbe -
+  Neues zwischen den Strömen“ treffen Poesie und Literatur aus verschiedenen
+  Kulturkreisen auf
     Musik. Sieben Komponisten sind eingeladen neue Stücke für die große
     Besetzung unseres Orchesters zu schreiben. Zugleich bieten wir jungen
-    Lyrikern und Schriftstellern aus dem arabischen, persischen und europäischen
-    Kulturraum die Chance ihre Texte in Lesungen sowie als Vertonungen
-    vorzustellen. Kostenlose öffentliche Workshops zu arabischer und persischer
-    Lyrik und Musik runden das durch den Hauptstadkulturfonds unterstützte Projekt ab.
+    Lyrikern und Schriftstellern aus dem arabischen,
+    persischen und europäischen Kulturraum die Chance ihre Texte in Lesungen
+    sowie als Vertonungen vorzustellen. Kostenlose öffentliche Workshops zu
+    arabischer und persischer Lyrik und Musik runden das durch den
+    Hauptstadkulturfonds unterstützte Projekt ab.
 
   </p>
 
@@ -101,12 +98,11 @@ layout: default
         <p>{{member.task}} </p>
       </div>
     </div>
-      {% assign loopindex = forloop.index | modulo: 4 %} {% if loopindex == 0 %}
-    </div>
-    <br>
-    <div class="row">
-      {% endif %}
-    {% endfor %}
+    {% assign loopindex = forloop.index | modulo: 4 %} {% if loopindex == 0 %}
+  </div>
+  <br>
+  <div class="row">
+    {% endif %} {% endfor %}
   </div>
 
   <br>
@@ -131,12 +127,11 @@ layout: default
       </div>
     </div>
 
-      {% assign loopindex = forloop.index | modulo: 4 %} {% if loopindex == 0 %}
-    </div>
-    <br>
-    <div class="row">
-      {% endif %}
-    {% endfor %}
+    {% assign loopindex = forloop.index | modulo: 4 %} {% if loopindex == 0 %}
+  </div>
+  <br>
+  <div class="row">
+    {% endif %} {% endfor %}
   </div>
 
 
@@ -144,163 +139,121 @@ layout: default
 <!-- Container (TOUR Section) -->
 <div id="gale" class="bg-1">
   <div class="container aboutContainer">
-    <h3 class="text-center">GALERIE</h3>
-
-{% for image in site.static_files %}
-  {% if image.path contains 'styles/pictures/gallery/babylonAuswahl2' %}
-    {% unless image.path contains '.s' %}
-      <a href="..{{ image.path }}">
-        <img class="img-fluid" src="..{{ image.path }}.s" alt="">
-      </a>
-    {% endunless %}
-  {% endif %}
-{% endfor %}
+    <h3 class="text-center">GALERIE</h3> {% assign counter = 1 %} {% for image in site.static_files %} {% if image.path contains 'styles/pictures/gallery/babylonAuswahl2' %} {% unless image.path contains '.s' %} {% assign counter=counter | plus:1 %} {% endunless %} {% endif %} {% endfor
+    %} {% assign colunmLength = counter | divided_by: 3 %}
 
     <div class="rowg">
       <div class="columng">
-        <a href="../styles/pictures/gallery/babylonAuswahl2/picture1.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                        <img src="../styles/pictures/gallery/babylonAuswahl2/picture1.jpg.s" style="width:100%">
-                    </a>
-        <a href="../styles/pictures/gallery/babylonAuswahl2/picture2.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                        <img src="../styles/pictures/gallery/babylonAuswahl2/picture2.jpg.s" style="width:100%">
-                    </a>
-        <a href="../styles/pictures/gallery/babylonAuswahl2/picture3.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                        <img src="../styles/pictures/gallery/babylonAuswahl2/picture3.jpg.s" style="width:100%"
-                            class="img-fluid">
-                    </a>
-        <a href="../styles/pictures/gallery/babylonAuswahl2/picture10.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                        <img src="../styles/pictures/gallery/babylonAuswahl2/picture10.jpg.s" style="width:100%"
-                            class="img-fluid">
-                    </a>
+
+        {% assign index = 1 %} {% assign colunmNumber = 1 %} {% for image in site.static_files %} {% if image.path contains 'styles/pictures/gallery/babylonAuswahl2' %} {% unless image.path contains '.s' %}
+        <a href="..{{ image.path }}" data-toggle="lightbox" data-gallery="example-gallery">
+                        <img src="..{{ image.path }}.s" style="width:100%">
+                    </a> {% assign loopindex = index | modulo: colunmLength %} {% if loopindex == 0 and colunmNumber
+        < 3%} {% assign colunmNumber=colunmNumber | plus:1 %} </div>
+          <div class="columng">
+            {% endif %} {% assign index=index | plus:1 %} {% endunless %} {% endif %} {% endfor %}
+
+          </div>
       </div>
-      <div class="columng">
-        <a href="../styles/pictures/gallery/babylonAuswahl2/picture4.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                        <img src="../styles/pictures/gallery/babylonAuswahl2/picture4.jpg.s" style="width:100%"
-                            class="img-fluid">
-                    </a>
-        <a href="../styles/pictures/gallery/babylonAuswahl2/picture5.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                        <img src="../styles/pictures/gallery/babylonAuswahl2/picture5.jpg.s" style="width:100%"
-                            class="img-fluid">
-                    </a>
-        <a href="../styles/pictures/gallery/babylonAuswahl2/picture6.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                        <img src="../styles/pictures/gallery/babylonAuswahl2/picture6.jpg.s" style="width:100%"
-                            class="img-fluid">
-                    </a>
+
+
+    </div>
+
+  </div>
+  <!-- Container (The Band Section) -->
+  <div id="musi" class="container aboutContainer text-center">
+    <h3>MUSIK</h3>
+    <br>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/SNElkt9HV9A?rel=0&amp;start=18" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </iframe>
+    </div>
+  </div>
+
+
+  <!-- <div>PRESSE</div> -->
+  <div id="press" class="container aboutContainer text-center">
+    <h3 class="text-center">ARCHIV</h3>
+    <br>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="360" height="215" src="https://www.youtube.com/embed/SNElkt9HV9A?rel=0&amp;start=18" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </iframe>
+        </div>
       </div>
-      <div class="columng">
-        <a href="../styles/pictures/gallery/babylonAuswahl2/picture7.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                        <img src="../styles/pictures/gallery/babylonAuswahl2/picture7.jpg.s" style="width:100%"
-                            class="img-fluid">
-                    </a>
-        <a href="../styles/pictures/gallery/babylonAuswahl2/picture8.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                        <img src="../styles/pictures/gallery/babylonAuswahl2/picture8.jpg.s" style="width:100%"
-                            class="img-fluid">
-                    </a>
-        <a href="../styles/pictures/gallery/babylonAuswahl2/picture9.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                        <img src="../styles/pictures/gallery/babylonAuswahl2/picture9.jpg.s" style="width:100%"
-                            class="img-fluid">
-                    </a>
+
+      <div class="col-sm-6">
+        <p align="justify">
+          <strong>KONZERT</strong>
+
+          <br> Berlin, 19. Dezember 2017. Das Konservatorium für Türkische Musik Berlin hat sich gemeinsam mit dem Babylon Orchestra erfolgreich mit dem Projekt „Foreign Rhythms - Baladi Gharib“ beim Arab Fund for Arts and Culture beworben.
+        </p>
+
+      </div>
+    </div>
+    <br>
+
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="thumbnail">
+          <img src="../styles/pictures/concert/concert.png" alt="Paris" width="100" height="100">
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <p align="justify">
+          <strong>KONZERT</strong>
+
+          <br> 25.04.2018 – Babylon Orchestra Soloists – Erbil (Kurdistan)
+        </p>
+
       </div>
     </div>
 
   </div>
 
-</div>
-<!-- Container (The Band Section) -->
-<div id="musi" class="container aboutContainer text-center">
-  <h3>MUSIK</h3>
-  <br>
-  <div class="embed-responsive embed-responsive-16by9">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/SNElkt9HV9A?rel=0&amp;start=18" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </iframe>
-  </div>
-</div>
+  <script>
+    $(document).ready(function() {
+      // Initialize Tooltip
+      $('[data-toggle="tooltip"]').tooltip();
 
+      // Add smooth scrolling to all links in navbar + footer link
+      $(".fixed-top-2 a, footer a[href='#myPage']").on(
+        'click',
+        function(event) {
 
-<!-- <div>PRESSE</div> -->
-<div id="press" class="container aboutContainer text-center">
-  <h3 class="text-center">ARCHIV</h3>
-  <br>
-  <div class="row">
-    <div class="col-sm-6">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe width="360" height="215" src="https://www.youtube.com/embed/SNElkt9HV9A?rel=0&amp;start=18" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </iframe>
-      </div>
-    </div>
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
 
-    <div class="col-sm-6">
-      <p align="justify">
-        <strong>KONZERT</strong>
-
-        <br> Berlin, 19. Dezember 2017. Das Konservatorium für Türkische Musik Berlin hat sich gemeinsam mit dem Babylon Orchestra erfolgreich mit dem Projekt „Foreign Rhythms - Baladi Gharib“ beim Arab Fund for Arts and Culture beworben.
-      </p>
-
-    </div>
-  </div>
-  <br>
-
-
-  <div class="row">
-    <div class="col-sm-6">
-      <div class="thumbnail">
-        <img src="../styles/pictures/concert/concert.png" alt="Paris" width="100" height="100">
-      </div>
-    </div>
-
-    <div class="col-sm-6">
-      <p align="justify">
-        <strong>KONZERT</strong>
-
-        <br> 25.04.2018 – Babylon Orchestra Soloists – Erbil (Kurdistan)
-      </p>
-
-    </div>
-  </div>
-
-</div>
-
-<script>
-  $(document).ready(function() {
-    // Initialize Tooltip
-    $('[data-toggle="tooltip"]').tooltip();
-
-    // Add smooth scrolling to all links in navbar + footer link
-    $(".fixed-top-2 a, footer a[href='#myPage']").on(
-      'click',
-      function(event) {
-
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(
-                hash)
-              .offset()
-              .top
-          }, 900, function() {
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location
-              .hash =
-              hash;
-          });
-        } // End if
-      });
-  })
-</script>
-    <script>
-        $(document).on('click', '[data-toggle="lightbox"]', function(event)
-        {
+            // Prevent default anchor click behavior
             event.preventDefault();
-            $(this).ekkoLightbox();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(
+                  hash)
+                .offset()
+                .top
+            }, 900, function() {
+
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location
+                .hash =
+                hash;
+            });
+          } // End if
         });
-    </script>
+    })
+  </script>
+  <script>
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
+  </script>
