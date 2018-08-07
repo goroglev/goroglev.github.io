@@ -1,6 +1,6 @@
 ---
 image_path: /styles/pictures/concert/concert.png
-venue: Tischlerei
+venue: 'Deutsche Oper (Tischlerei)'
 concert_date: Samstag, 24.11.2018
 title: Babylon Orchestra
 address: Bismarckstraße 35, 10627 Berlin-Charlottenburg
