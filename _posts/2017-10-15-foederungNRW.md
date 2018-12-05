@@ -18,4 +18,4 @@ Komponistin Diana Syrse. Sie wird die orientalischen Klänge
 und Sprachen unseres Orchesters um lateinamerikanische
 Rhythmen und Texte ergänzen. Am 16. Januar 2019 werden wir
 gemeinsam in der Rudolf-Oetker-Halle in Bielefeld
-auftreten.</p>
+auftreten.
