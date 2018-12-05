@@ -34,6 +34,28 @@
          padding-top: 130px;
      }
 
+     .blogjustify{
+         text-align: justify;
+         text-justify: inter-word;
+     }
+     .blogjustify h1{
+         text-align: left;
+         text-justify: inter-word;
+     }
+     .blogjustify h2 a{
+       color: #181818;
+       font-style: bold;
+     }
+     .blogjustify h5{ 
+        font-style: italic;
+        color: gray;
+     }
+     
+
+     .blogjustify ul {
+         list-style-type: none;
+       }
+
      .person {
          border: 5px solid transparent;
          margin-bottom: 25px;
