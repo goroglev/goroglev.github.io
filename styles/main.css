@@ -41,19 +41,27 @@
      .blogjustify h1{
          text-align: left;
          text-justify: inter-word;
+       font-style: bold;
+       font-size: 200%;
      }
      .blogjustify h2 a{
        color: #181818;
        font-style: bold;
+       font-size: 80%;
      }
      .blogjustify h5{ 
         font-style: italic;
         color: gray;
+       font-size: 100%;
      }
      
 
      .blogjustify ul {
          list-style-type: none;
+       }
+       .blogjustify .blogDate{
+       
+        color: gray;
        }
 
      .person {
