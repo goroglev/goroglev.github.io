@@ -1,8 +1,7 @@
 # BabylonBootstrap
 
-To run the app use a local server 
 ```
-http-server 'path/to/your/angular/root/directory' -o
+bundle exec jekyll serve
 ```
 
 make sure npm server is  installed 
