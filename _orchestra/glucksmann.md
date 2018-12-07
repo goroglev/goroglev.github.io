@@ -1,5 +1,5 @@
 ---
-name: Wassim Mukdad
-image_path: ../styles/pictures/orchestra/oud.jpg
-task: Oud
+name: Michael Glucksmann
+image_path: ../styles/pictures/orchestra/guitar.jpg
+task: Gitarre
 ---
