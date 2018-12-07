@@ -8,7 +8,7 @@ Das Babylon Orchester wird 2018 gefördert.
 
 ![](/styles/pictures/news/nrw.png){:height="25%" width="25%"}
 
-Dank des[ Förderprogramms
+Dank des[Förderprogramms
 für Weltmusik „Musikkulturen“ des NRW
 Kultursekretariats](http://nrw-kultur.de/en/programme/musikkulturen/programm_2018_19/babylon_orchestra_soloists/#/)
 planen wir für 2018/2019 auch einige Auftritte in
