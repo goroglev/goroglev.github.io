@@ -1,8 +1,11 @@
 ---
 image_path: /styles/pictures/concert/concert.png
-venue: Märkisches Museum
-concert_date: Sonntag, 10.06.2018
-title: Babylon Orchestra Soloists
-address: Am Köllnischen Park 5, 10179 Berlin
-details: Vorverkauf wird noch bekannt gegeben
+venue: 'Deutsche Oper (Tischlerei)'
+concert_date: Samstag, 24.11.2018
+title: 'Babylon ORCHESTRA: Die Welt von gestern.'
+address: Bismarckstraße 35, 10627 Berlin-Charlottenburg
+details:
+  <a target="_blank" href="https://www.deutscheoperberlin.de/de_DE/calendar/lieder-zwischen-euphrat-und-elbe.15308205">
+                                   Tickets
+                                    </a>
 ---

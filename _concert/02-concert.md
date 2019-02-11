@@ -1,8 +1,8 @@
 ---
-image_path: /styles/pictures/concert/passion.jpg
-venue: Passionskirche
-concert_date: Freitag, 08.06.2018
-title: Babylon Orchestra
-address:  Marheinekepl. 1, 10961 Berlin
-details:  Sichern Sie sich Ihre Karten direkt <a target="_blank" href="http://www.akanthus.de/de/veranstaltungen/eventeinzelheiten/1172/-/babylon-orchestra"> Online</a>
+image_path: /styles/pictures/concert/concert.png
+venue: HAU 1
+concert_date: Mittwoch, 17.10.2018
+title: 'Babylon ORCHESTRA - Minimal Acoustic Poetry - Zwischen Iran und Palästina'
+address: Stresemannstr. 29, 10963 Berlin
+details: Tickets gibt es <a href="https://hebbel-am-ufer.reservix.de/p/reservix/event/1264441?_locale=de"> hier </a>
 ---
