@@ -4,7 +4,7 @@ title:  Förderung Babylon ORCHESTRA 2018
 author: Mischa
 ---
 
-Das Babylon Orchester wird 20018 gefördert. 
+Das Babylon Orchester wird 2018 gefördert. 
 
 ![](/styles/pictures/news/hauptstadtFonds.jpg
 ){:height="25%" width="25%"}
