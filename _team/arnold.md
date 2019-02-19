@@ -1,5 +1,5 @@
 ---
-name: Katja Arnold
-image_path: ../styles/pictures/team/arnh.jpg
-task: Pressearbeit
+name: Aliena Haig
+image_path: ../styles/pictures/team/haig.jpg
+task: Public Relations
 ---
