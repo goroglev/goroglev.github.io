@@ -10,7 +10,7 @@ Wir laden zum Artist Talk ein: Ein Gespräch mit Anna von Gehren (Regisseurin), 
    <div class="row">
       <div class="col-sm-6">
         <div class="embed-responsive embed-responsive-16by9">
-          <iframe width="360" height="215" src="https://www.youtube.com/embed/53w8CncvxK8rel=0&amp;start=18" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <iframe width="360" height="215" src="https://www.youtube.com/embed/53w8CncvxK8?rel=0&amp;start=18" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </iframe>
         </div>
       </div>
