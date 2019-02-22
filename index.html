@@ -94,7 +94,14 @@ layout: default
 
 
     </p>
-    <br>
+    <br> {% assign lastVideo = site.musicVideos | reverse | first %}
+
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe width="1280" height="720" src="{{lastVideo.adress}}" frameborder="0" allow="autoplay; encrypted-media"
+            allowfullscreen></iframe>
+
+    </div>
+
 </div>
 
 <!-- TOUR (News  Section) -->
@@ -105,7 +112,7 @@ layout: default
             <br>Sichern Sie sich Ihre Tickets.</p>
 
         <div class="row text-center">
-            {% for concert in site.concert %}
+            {% for concert in site.concert reverse%}
 
             <div class="col-md-4 ">
                 <div class="thumbnail bg-light ">
@@ -246,7 +253,7 @@ layout: default
     <p align="justify">
         Ein Projekt wie das Babylon Orchestra ist nur realisierbar, wenn es viele Mitwirkende
         gibt, die im Vorder- oder Hintergrund zum Gelingen beitragen. Kooperationspartner:
-        </p>
+    </p>
     <br>
 
     <a target="_blank" href="http://www.btmk.de/de/">

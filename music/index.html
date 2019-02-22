@@ -1,0 +1,24 @@
+--- 
+layout: default 
+title: Musik 
+---
+
+<div class="container aboutContainer text-center">
+    <h1>Musik</h1>
+    <br>
+
+    <div class="blogjustify">
+        <ul>
+            {% for video in site.musicVideos reversed %}
+            <li>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="1280" height="720" src="{{video.adress}}" frameborder="0" allow="autoplay; encrypted-media"
+                        allowfullscreen></iframe>
+                </div>
+            </li>
+            <br> 
+            {% endfor %}
+
+        </ul>
+    </div>
+</div>
