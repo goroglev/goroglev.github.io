@@ -1,5 +1,5 @@
 ---
-image_path: /styles/pictures/concert/concert.png
+image_path: /styles/pictures/concert/TischlereiWeb.png
 venue: Deutsche Oper
 concert_date: Samstag, 24.11.2018
 title: 'Babylon ORCHESTRA: Die Welt von gestern.'
