@@ -1,5 +1,5 @@
 ---
-image_path: /styles/pictures/concert/concert.png
+image_path: /styles/pictures/concert/Neuss.png
 venue: 'Pauline-Sels-Saal, Neuss'
 concert_date: Sonntag, 12.05.2019
 title: 'Babylon Soloists feat. Diana Syrse'
