@@ -1,5 +1,5 @@
 ---
-image_path: /styles/pictures/concert/concert.png
+image_path: /styles/pictures/concert/HAUWeb.png
 venue: HAU 1
 concert_date: Mittwoch, 17.10.2018
 title: 'Babylon ORCHESTRA - Minimal Acoustic Poetry - Zwischen Iran und Palästina'
