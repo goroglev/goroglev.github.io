@@ -1,5 +1,5 @@
 ---
-image_path: /styles/pictures/concert/ufa.jpg
+image_path: /styles/pictures/concert/ufaWeb.jpg
 venue: 'uFa Fabrik'
 concert_date: Sonntag, 24.03.2019 | 19 Uhr
 title: 'Babylon Soloists feat. Mohannad Nasser'
