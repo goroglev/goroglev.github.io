@@ -47,7 +47,7 @@ layout: default
 
 
 <div class="container text-center">
-    <h3>BABYLON ORCHESTRA</h3>
+    <h1>BABYLON ORCHESTRA</h1>
     <p><em>Orient trifft Okzident - im Herzen Berlins</em></p>
     <p align="justify">
         Das Babylon ORCHESTRA ist ein junges Berliner Ensemble für urbane orientalische
@@ -112,7 +112,7 @@ layout: default
             <br>Sichern Sie sich Ihre Tickets.</p>
 
         <div class="row text-center">
-            {% for concert in site.concert reverse%}
+            {% for concert in site.concert  reversed %}
 
             <div class="col-md-4 ">
                 <div class="thumbnail bg-light ">
@@ -130,7 +130,6 @@ layout: default
                         <!-- Modal content-->
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="text-center">Details</h4>
                             </div>
                             <div class="modal-body blackFont">
                                 <h2>{{concert.title}}</h2>

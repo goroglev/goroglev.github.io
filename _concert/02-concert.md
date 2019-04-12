@@ -1,8 +1,8 @@
 ---
-image_path: /styles/pictures/concert/ufaWeb2.png
-venue: 'ufaFabrik'
-concert_date: Sonntag, 24.03.2019 | 19 Uhr
-title: 'Babylon ORCHESTRA soloists feat. Mohannad Nasser'
-address: Viktoriastr. 10-18 , 12105 Berlin 
-details: <a target="_blank" href="https://ufafabrik.reservix.de/p/reservix/group/296850">Tickets</a>
+image_path: /styles/pictures/concert/HAUWeb.png
+venue: HAU 1
+concert_date: Mittwoch, 17.10.2018
+title: 'Babylon ORCHESTRA - Minimal Acoustic Poetry - Zwischen Iran und Palästina'
+address: Stresemannstr. 29, 10963 Berlin
+details: Tickets gibt es <a href="https://hebbel-am-ufer.reservix.de/p/reservix/event/1264441?_locale=de"> hier </a>
 ---
