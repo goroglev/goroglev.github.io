@@ -1,5 +1,5 @@
 ---
-image_path: /styles/pictures/concert/
+image_path: /styles/pictures/concert/fluchtgeschichten.jpg
 venue: 'Komische Oper Berlin
 concert_date: Sonntag, 26.01.2020
 title: 'Flucht - Eine Konzert-Trilogie'
