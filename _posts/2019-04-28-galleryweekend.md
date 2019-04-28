@@ -2,9 +2,11 @@
 layout: post
 title: GALLERY WEEKEND 2019 BERLIN: Babylon ORCHESTRA - So, 28. April um 18 Uhr, ALEXANDER OCHS PRIVATE
 author: Adri
+data: 2018-11-24
 ---
 
 Zum Abschluss des GALLERY WEEKENDS BERLIN 2019 treffen sich Solisten des Babylon ORCHESTRA bei ALEXANDER OCHS PRIVATE, dem Salon in der Charlottenburger Schillerstraße. 
+
 Ensemble an diesem Abend:
 Mischa Tangian – Leitung, Geige, Klavier, Gesang
 Jörg Bücheler – Posaune
