@@ -2,7 +2,7 @@
 layout: post
 title: GALLERY WEEKEND 2019 BERLIN: Babylon ORCHESTRA - So, 28. April um 18 Uhr, ALEXANDER OCHS PRIVATE
 author: Adri
-data: 2018-11-24
+data: 2019-04-28
 ---
 
 Zum Abschluss des GALLERY WEEKENDS BERLIN 2019 treffen sich Solisten des Babylon ORCHESTRA bei ALEXANDER OCHS PRIVATE, dem Salon in der Charlottenburger Schillerstraße. 
