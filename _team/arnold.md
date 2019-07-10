@@ -1,5 +1,5 @@
 ---
-name: Aliena Haig
-image_path: ../styles/pictures/team/haig.jpg
-task: Public Relations
+name: Susanne Ruprecht
+image_path: ../styles/pictures/team/Susanne_Ruprecht_Web.jpg
+task: Presse
 ---
