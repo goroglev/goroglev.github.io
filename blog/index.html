@@ -1,29 +1,29 @@
---- 
-layout: default 
-title: Blog 
+---
+layout: default
+title: Blog
 ---
 
 <div class="container aboutContainer text-center">
-<h1>Neuigkeiten</h1>
-<br>
+  <h1>Neuigkeiten</h1>
+  <br />
 
-
-<div class="blogjustify">
-
-<ul>
-    {% for post in site.posts %}
-    <li>
-        <h5>{{post.date |  date_to_string }}</h5>
-        <h2><a href="{{ post.url }}"><b>
-            {{ post.title }}
+  <div class="blogjustify">
+    <ul>
+      {% for post in site.posts %}
+      <li>
+        <h5>{{post.date | date_to_string }}</h5>
+        <h2>
+          <a href="{{ post.url }}"
+            ><b>
+              {{ post.title }}
             </b>
-          </a></h2>
-        
+          </a>
+        </h2>
+
         <p>{{ post.excerpt }}</p>
         <hr />
-    </li>
-    {% endfor %}
-</ul>
-
-</div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>
