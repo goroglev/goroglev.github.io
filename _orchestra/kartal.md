@@ -1,5 +1,5 @@
 ---
-name: Adrien Braud
+name: Deniz Mahir Kartal
 image_path: ../styles/pictures/orchestra/klarinette.jpg
-task: Klarinette <br> Bassklarinette 
+task: Duduk
 ---
