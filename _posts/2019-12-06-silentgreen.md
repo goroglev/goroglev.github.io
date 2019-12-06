@@ -4,7 +4,7 @@ title: Dream-Pop - Babylon Orchestra unVEILed Vol. III featuring Bahila Hijazi a
 author: Adri
 data: 2019-12-06
 ---
-![](/styles/pictures/news/silentgreen.jpg){:height="100%" width="100%"}
+![](/styles/pictures/news/hijazi_silent_green.jpg){:height="100%" width="100%"}
 
 Entfremdung und Menschen auf der Suche nach Individualität: Mit diesen Erfahrungen beschäftigt sich die syrische Sängerin Bahila Hijazi in ihren Songtexten. Im Rahmen der Reihe unVEILed Vol. III ist sie zusammen mit dem Babylon Orchestra am Freitag, 6. Dezember, in der Kuppelhalle zu Gast. Ihre Musik – eine Art atmosphärischer Traum-Pop – ist geprägt von sphärischen Flächen und poetischem Gesang. Hijazi war Mitglied der ersten syrischen Frauen-Rockband Karma. Ihre Liebe zur Musik weitete sie während ihres Architekturstudiums in Damaskus, Istanbul und Berlin weiter aus. Sie spielt neben Keyboard auch Gitarre, Bass und Schlagzeug und schreibt zur Zeit an ihrer neuen EP, die Ende des Jahres erscheinen wird.
 
