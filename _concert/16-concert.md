@@ -1,6 +1,6 @@
 ---
 image_path: /styles/pictures/concert/BO_concert_011120.jpg
-venue: 'Kesselhaus&Maschinenhaus (Kulturbrauerei)'
+venue: 'Kessel-/ Maschinenhaus (Kulturbrauerei)'
 concert_date: Sonntag, 01.11.2020
 title: 'Babylon Orchestra unVeiled Vol. V'
 address: Knaackstraße 97, 10435 Berlin
