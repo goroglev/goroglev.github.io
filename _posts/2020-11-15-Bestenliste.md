@@ -4,7 +4,6 @@ title: Applaus! Das Babylon ORCHESTRA Debut Album hat es auf die BESTENLISTE des
 author: Adri
 data: 2020-11-15
 ---
-
 ![](/styles/sponsors/preis_schallplattenkritik_bestenliste.jpg){:height="100%" width="100%"}
 
 Liebe Fans und Freunde, heute freuen wir uns eine großartige Nachricht mit euch teilen zu dürfen:<br />
