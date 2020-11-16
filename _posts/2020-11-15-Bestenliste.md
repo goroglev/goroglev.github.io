@@ -6,12 +6,11 @@ data: 2020-11-15
 ---
 ![](/styles/pictures/preis_schallplattenkritik_bestenliste.jpg){:height="100%" width="100%"}
 
-Liebe Fans und Freunde, heute freuen wir uns eine großartige Nachricht mit euch teilen zu dürfen:<br />
-Unser Debut Album hat es in diesem Quartal auf die  Bestenliste des [Preis der deutschen Schallplattenkritik](https://www.schallplattenkritik.de/bestenlisten/2020/04#win1513) geschafft!<br />
+Liebe Fans und Freunde, heute freuen wir uns eine großartige Nachricht mit euch teilen zu dürfen:
+Unser Debut Album hat es in diesem Quartal auf die  Bestenliste des<br />
+[Preis der deutschen Schallplattenkritik](https://www.schallplattenkritik.de/bestenlisten/2020/04#win1513) geschafft!<br />
 
-Mit einem Platz auf der Bestenliste werden vierteljährlich die besten und interessantesten Neuveröffentlichungen <br />
-der vorangegangenen drei Monate ausgezeichnet. Bewertungskriterien sind künstlerische Qualität, <br />
-Repertoirewert, Präsentation und Klangqualität.
+Mit einem Platz auf der Bestenliste werden vierteljährlich die besten und interessantesten Neuveröffentlichungen der vorangegangenen drei Monate ausgezeichnet. Bewertungskriterien sind künstlerische Qualität, Repertoirewert, Präsentation und Klangqualität.
 
 Hier die Kritik der Jury:
 <p>
@@ -27,9 +26,10 @@ von Solo-Einlagen und bombastischem Orchestersound.</i>
 <p>
 <i>Fantastisch!</i><br />
 Übrigens: Weihnachten steht vor der Tür!<br />
+  
 Wer noch ein passendes Geschenk sucht: Ihr könnt das Album nach wie vor über [Sungroove Records](https://www.sungroove.de) bestellen
 oder als hochaufeglösten digitalen Download (94kHz und 24 Bit) über unseren Partner [HIGHRESAUDIO](https://www.highresaudio.com/de/album/view/ncfqxc/babylon-orchestra-babylon-orchestra).<br />
-<br />
+
 Des Weiteren ist das Album natürlich auch auf Spotify [Spotify](https://open.spotify.com/artist/2YfCVOGiOf90FwKBDWplw6) und Deezer [Deezer](https://www.deezer.com/de/) zu finden.
 <br />
 Feiert mit uns diesen Erfolg und teilt es mit euren Freunden!
