@@ -29,9 +29,8 @@ von Solo-Einlagen und bombastischem Orchestersound.</i>
   </p>
   <p>
 Wer noch ein passendes Geschenk sucht:
-  
+</p>
   Ihr könnt das Album nach wie vor über [Sungroove Records](https://www.sungroove.de) bestellen oder als hochaufgelösten digitalen Download (94kHz und 24 Bit) über unseren Partner [HIGHRESAUDIO](https://www.highresaudio.com/de/album/view/ncfqxc/babylon-orchestra-babylon-orchestra).
-  
   </p>
 Des Weiteren ist das Album natürlich auch auf [Spotify](https://open.spotify.com/artist/2YfCVOGiOf90FwKBDWplw6) und [Deezer](https://www.deezer.com/de/) zu finden.
 <br />
