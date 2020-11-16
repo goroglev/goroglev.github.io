@@ -7,7 +7,7 @@ data: 2020-11-15
 ![](/styles/pictures/preis_schallplattenkritik_bestenliste.jpg){:height="100%" width="100%"}
 
 Liebe Fans und Freunde, heute freuen wir uns eine großartige Nachricht mit euch teilen zu dürfen:
-Unser Debut Album hat es in diesem Quartal auf die  Bestenliste des<br />
+Unser Debut Album hat es in diesem Quartal auf die <b><i>Bestenliste</i></b> des<br />
 [Preis der deutschen Schallplattenkritik](https://www.schallplattenkritik.de/bestenlisten/2020/04#win1513) geschafft!<br />
 
 Mit einem Platz auf der Bestenliste werden vierteljährlich die besten und interessantesten Neuveröffentlichungen der vorangegangenen drei Monate ausgezeichnet. Bewertungskriterien sind künstlerische Qualität, Repertoirewert, Präsentation und Klangqualität.
