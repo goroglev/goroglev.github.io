@@ -17,7 +17,7 @@ Hier die Kritik der Jury:
 <i>Das Orchestra Babylon aus Berlin, gegründet 2016, steht in besonderer Weise für den Slogan: <br />
 »Wir schaffen das!«: Zweiundzwanzig Musiker*innen aus Syrien, Iran, Irak, <br />
 Israel, Russland, Italien, Frankreich, Kurdistan und Deutschland nebst sechs Gästen <br />
-haben mit ihrem Albumeine Antwort auf Migrationsbewegungen der Gegenwart gefunden.<br />
+haben mit ihrem Album eine Antwort auf Migrationsbewegungen der Gegenwart gefunden.<br />
 Mit unterschiedlichsten musikalischen Wurzeln kreieren sie Klangwelten, die Tradition, <br />
 Klassik und Moderne auf natürliche Weise vereinen. Es ist ein zeitgemäßer, urbaner <br />
 und dynamischer Crossover von Orient und Okzident mit atemraubenden Wechseln <br />
