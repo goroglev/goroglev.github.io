@@ -1,5 +1,5 @@
 ---
 name: Janis Krämer
-image_path: ../styles/pictures/team/janis_kraemer.jpeg
+image_path: ../styles/pictures/team/kraemer.jpg
 task: Fundraising
 ---
