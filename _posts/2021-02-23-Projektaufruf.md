@@ -5,7 +5,7 @@ author: Adri
 data: 2021-02-23
 ---
 
-<embed src="/styles/press/BO_Projektaufruf_PDF.pdf" type="application/pdf" width="100%" height="600px" />
+<embed src="/styles/press/BO_Projektaufruf_PDF.pdf" type="application/pdf" width="100%" height="600px"/>
 
 Du spielst ein Instrument? Du interessierst Dich für Filmmusik und möchtest Dich weiterbilden? Du bist an der Geschichte Deiner Stadt und Deiner Mitmenschen interessiert?<br />
 <p>
@@ -20,3 +20,4 @@ Teilnahmeschluss für die Anmeldung ist der <b><i>15. März 2021</i></b> <br />
 Wir freuen uns über jede Nachricht und auf ein neues und spanndendes gemeinsames Projekt!<br />
 <b><i>Sei dabei!</i></b>
  <p>
+<embed src="/styles/press/BO_Projektaufruf_PDF.pdf" type="application/pdf" width="100%" height="600px"/>
