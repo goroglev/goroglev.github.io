@@ -12,5 +12,5 @@ Bewirb Dich jetzt!
 <p>
   <a href="/styles/press/BO_Projektaufruf_2.pdf">Mehr Infos hier!</a>
 <p>
-<embed src="/styles/press/BO_Projektaufruf_2.pdf" type="application/pdf" width="100%" height="600px"/>
+<embed src="/styles/press/Projektaufruf_2.pdf" type="application/pdf" width="100%" height="600px"/>
 
