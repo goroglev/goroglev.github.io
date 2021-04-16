@@ -163,7 +163,7 @@ layout: default
           />
           <p><strong>{{concert.venue }}</strong></p>
           <p>{{concert.concert_date}}</p>
-		  <p>concertSeason({{concert.concert_date}})</p>	
+		  <p><script type="application/javascript">concertSeason('{{concert.concert_date}}')</script></p>	
           <button
             class="btn"
             data-toggle="modal"
