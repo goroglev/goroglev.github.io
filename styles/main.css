@@ -398,3 +398,7 @@ textarea {
   border-top-right-radius: 0;
   border-radius: 0;
 }
+
+#mj-w-popin-block {
+    margin: 15% auto;
+}
