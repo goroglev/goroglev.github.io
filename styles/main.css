@@ -399,6 +399,11 @@ textarea {
   border-radius: 0;
 }
 
-#mj-w-popin-block {
-    margin: 17% auto!important;
+#mj-w-overlay {
+	position: relative!important;
 }
+
+#mj-w-popin-block {
+    margin: 15% auto!important;
+}
+
