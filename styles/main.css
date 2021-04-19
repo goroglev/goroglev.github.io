@@ -399,8 +399,13 @@ textarea {
   border-radius: 0;
 }
 
-#mj-w-popin-block {  
-	overflow-y: scroll;
-    overflow-x: hidden;
+#mj-w-overlay {
+	/*position: relative!important;*/
+	display: unset!important;
+}
+
+#mj-w-popin-block {
+    margin: 15% auto!important;
+	width: 100%!important;	
 }
 
