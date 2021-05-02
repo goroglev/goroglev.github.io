@@ -142,6 +142,7 @@ layout: default
   </p>
 
 <!-- TOUR (News  Section) -->
+	
 <div id="tour" class="bg-1">
   <div class="container">
     <h3 class="text-center">KONZERTE</h3>
@@ -149,131 +150,28 @@ layout: default
       Wir spielen auch bald in Ihrer N&#xE4;he <br />Sichern Sie sich Ihre
       Tickets.
     </p>
-
-    <div class="row text-center">
+	  <br />
       {% for concert in site.concert reversed %}
 
-      <div class="col-md-4 ">
-        <div class="thumbnail bg-light ">
-          <img
-            src="{{concert.image_path}}"
-            class="img-thumbnail"
-            alt="San Francisco"
-            height="280"
-          />
-          <p><strong>{{concert.venue }}</strong></p>
-          <p>{{concert.concert_date}}</p>
-		  <p><script type="application/javascript">document.write(concertSeason('{{concert.concert_date}}'))</script></p>	
-          <button
-            class="btn"
-            data-toggle="modal"
-            data-target="#modal{{forloop.index}}"
-          >
-            Details
-          </button>
-        </div>
+	  <div class="card bg-light" align="left" style="color: black; margin-top: 10px; margin-bottom: 10px; border: none">
+<div style="background: #ababf6a8;" align: center>
+	<div style="float:left; border-right: 1px solid #aeb5d9">
+    	<h6 class="card-header" style="font-weight: 1000;">{{concert.concert_date}}</h6>
+  	</div>
+	<div style="float:right; border-left: 1px solid #aeb5d9">
+    	<h6 class="card-header" style="font-weight: 1000;">{{concert.city}}</h6>
+  	</div>
+</div>
 
-        <!-- Modal -->
-        <div class="modal fade" id="modal{{forloop.index}}" role="dialog">
-          <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-              <div class="modal-header"></div>
-              <div class="modal-body blackFont">
-                <h2>{{concert.title}}</h2>
-                <p><i class="fas fa-location-arrow"></i> {{concert.address}}</p>
-                <p>
-                  {{concert.details}}
-                </p>
-              </div>
-              <div class="modal-footer">
-                <button
-                  type="submit"
-                  class="btn btn-danger btn-secondary
-                float-left"
-                  data-dismiss="modal"
-                >
-                  Cancel
-                </button>
-                <p>Need <a href="#">help?</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {% assign loopindex = forloop.index | modulo: 3 %} {% if loopindex == 0 %}
+<div class="card-body" style="background: #70471d14; padding: .9rem">
+    <h6 class="card-title">{{concert.title}}</h6>
+    <h7 class="card-subtitle mb-2 text-muted">{{concert.venue}}</h7>
+	<p class="card-text" style="font-style: normal"><small><i class="fas fa-map-pin"></i>&nbsp;{{concert.address}}</small></p>
+  </div>
+	<div class="card-footer text-center" style="padding: .4rem 1.25rem;"><a href="{{concert.details}}" class="card-link"><small>Details und Tickets</small></a></div>
+	</div>
+{% endfor %}
     </div>
-    <br />
-    <div class="row text-center">
-      {% endif %} {% endfor %}
-    </div>
-    <br />
-
-    <!-- Container (WORKSHOP  Section) -->
-
-    <h3 class="text-center">WORKSHOP</h3>
-    <p class="text-center">
-      Nehmen Sie teil an einem unserer Workshops
-    </p>
-
-    <div class="row text-center">
-      {% for workshop in site.workshop %}
-
-      <div class="col-md-4 ">
-        <div class="thumbnail bg-light ">
-          <img
-            src="{{workshop.image_path}}"
-            class="img-thumbnail"
-            alt="San Francisco"
-            height="280"
-          />
-          <p><strong>{{workshop.venue }}</strong></p>
-          <p>{{workshop.concert_date}}</p>
-          <button
-            class="btn"
-            data-toggle="modal"
-            data-target="#workshop{{forloop.index}}"
-          >
-            Details
-          </button>
-        </div>
-
-        <!-- Modal -->
-        <div class="modal fade" id="workshop{{forloop.index}}" role="dialog">
-          <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-              <div class="modal-body blackFont">
-                <h2>{{workshop.title}}</h2>
-                <p>
-                  <i class="fas fa-location-arrow"></i> {{workshop.address}}
-                </p>
-                <p>
-                  {{workshop.details}}
-                </p>
-              </div>
-              <div class="modal-footer">
-                <button
-                  type="submit"
-                  class="btn btn-danger btn-secondary
-                float-left"
-                  data-dismiss="modal"
-                >
-                  Cancel
-                </button>
-                <p>Need <a href="#">help?</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {% assign loopindex = forloop.index | modulo: 3 %} {% if loopindex == 0 %}
-    </div>
-    <br />
-    <div class="row text-center">
-      {% endif %} {% endfor %}
-    </div>
-    <br />
   </div>
 </div>
 
@@ -430,5 +328,63 @@ layout: default
         );
       } // End if
     });
+	    // inspired by http://jsfiddle.net/arunpjohny/564Lxosz/1/
+   $('.table-responsive-stack').each(function (i) {
+      var id = $(this).attr('id');
+      //alert(id);
+      $(this).find("th").each(function(i) {
+         $('#'+id + ' td:nth-child(' + (i + 1) + ')').prepend('<span class="table-responsive-stack-thead">'+             $(this).text() + ':</span> ');
+         $('.table-responsive-stack-thead').hide();
+         
+      });
+      
+
+      
+   });
+
+   
+   
+   
+   
+$( '.table-responsive-stack' ).each(function() {
+  var thCount = $(this).find("th").length; 
+   var rowGrow = 100 / thCount + '%';
+   //console.log(rowGrow);
+   $(this).find("th, td").css('flex-basis', rowGrow);   
+});
+   
+   
+   
+   
+function flexTable(){
+   if ($(window).width() < 768) {
+      
+   $(".table-responsive-stack").each(function (i) {
+      $(this).find(".table-responsive-stack-thead").show();
+      $(this).find('thead').hide();
+   });
+      
+    
+   // window is less than 768px   
+   } else {
+      
+      
+   $(".table-responsive-stack").each(function (i) {
+      $(this).find(".table-responsive-stack-thead").hide();
+      $(this).find('thead').show();
+   });
+      
+      
+
+   }
+// flextable   
+}      
+ 
+flexTable();
+   
+window.onresize = function(event) {
+    flexTable();
+};
+	  
   });
 </script>
