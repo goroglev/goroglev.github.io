@@ -9,3 +9,11 @@ function concertSeason(concertDateString) {
 	}
 	return season;
 }
+
+function _confirm(text) {
+	_continue = confirm(text);
+	if (_continue) {
+		return true;
+	}
+	return false;
+}
