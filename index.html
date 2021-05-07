@@ -142,7 +142,10 @@ layout: default
   </p>
 
 <!-- TOUR (News  Section) -->
-	
+<script language="javascript">
+	seasons = [];
+</script>
+
 <div id="tour" class="bg-1">
   <div class="container">
     <h3 class="text-center">KONZERTE</h3>
@@ -152,20 +155,27 @@ layout: default
     </p>
 	  <br />
       {% for concert in site.concert reversed %}
-
+	<script language="javascript">
+		prev_season = seasons.pop();
+		season = concertSeason('{{concert.concert_date}}');
+		if (prev_season == undefined || prev_season != season) {
+			document.write('<p style="background-color: #333;font-style: normal; font-weight:1000; font-size:large;margin-top: 1rem;">' + season + '</p>');
+		};
+		seasons.push(season);
+	  </script>
 	  <div class="card bg-light" align="left" style="color: black; margin-top: 10px; margin-bottom: 10px; border: none">
 <div style="background: rgb(100 21 69);color: white;" align: center> 
-	<div style="float:left; border-right: 1px solid #611b61">
-    	<h6 class="card-header" style="font-weight: 1000; background-color: rgba(0,0,0,.13);">{{concert.concert_date}}</h6>
+	<div style="float:left;">
+    	<h6 class="card-header" style="font-weight: 500;">{{concert.concert_date}}</h6>
   	</div>
-	<div style="float:right; border-left: 1px solid #611b61">
-    	<h6 class="card-header" style="font-weight: 1000; background-color: rgba(0,0,0,.13);"><a href="{{concert.details}}" class="card-link"><small>Tickets/Details</small></a></h6>
+	<div style="float:right;">
+    	<h6 class="card-header"><a href="{{concert.details}}" class="card-link"><small>Tickets/Details</small></a></h6>
   	</div>
 </div>
 
 <div class="card-body" style="background: #70471d14; padding: .9rem">
-    <h6 class="card-title">{{concert.title}}</h6>
-    <h7 class="card-subtitle mb-2 text-muted">{{concert.venue}}</h7>
+    <h6 class="card-title" style="margin-bottom: 0;"><small>{{concert.title}}</small></h6>
+    <h7 class="card-subtitle mb-2 text-muted"><small>{{concert.venue}}</small></h7>
 	<p class="card-text" style="font-style: normal"><small><i class="fas fa-map-pin"></i>&nbsp;{{concert.address}}</small></p>
   </div>
 	</div>
