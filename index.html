@@ -144,6 +144,7 @@ layout: default
 <!-- TOUR (News  Section) -->
 <script language="javascript">
 	seasons = [];
+	season_html = '';
 </script>
 
 <div id="tour" class="bg-1">
@@ -154,16 +155,39 @@ layout: default
       Tickets.
     </p>
 	  <br />
-      {% for concert in site.concert reversed %}
+	<div></div>
+
+	  {% for concert in site.concert reversed %}
 	<script language="javascript">
 		prev_season = seasons.pop();
 		season = concertSeason('{{concert.concert_date}}');
-		if (prev_season == undefined || prev_season != season) {
-			document.write('<p style="background-color: #333;font-style: normal; font-weight:1000; font-size:large;margin-top: 1rem;">' + season + '</p>');
+		if (season_html == '' || prev_season != season) {
+			if (typeof prev_season !== "undefined" && prev_season != season) {			
+				season_html += `</div>
+        					</div>
+    					</div>`
+				$("div .container").children("div").last().after(season_html);
+				season_html = '';
+				}
+			var collapse = 'card-body collapse';
+			var collapsed = '';
+			if ({{forloop.index}} <= 2) {
+				collapse += ' show';
+			} else {
+				collapsed += ' collapsed';
+			}
+			season_html += `<div id="accordion{{forloop.index}}" class="accordion">
+        <div class="card" style="background-color: #333;">			
+            <div class="card-header toggle` + collapsed + `" data-toggle="collapse" href="#collapse{{forloop.index}}" style="font-style: normal; font-weight:1000; font-size:large;">
+                <a class="card-title">` + season +
+			`</a>
+            </div>
+            <div id="collapse{{forloop.index}}" class="` + collapse + `" data-parent="#accordion{{forloop.index}}">`;
+			//season_html = '<p style="background-color: #333;font-style: normal; font-weight:1000; font-size:large;margin-top: 1rem;">' + season + '</p>';			
 		};
 		seasons.push(season);
-	  </script>
-	  <div class="card bg-light" align="left" style="color: black; margin-top: 10px; margin-bottom: 10px; border: none">
+	  
+	  season_html += `<div class="card bg-light" align="left" style="color: black; margin-top: 10px; margin-bottom: 10px; border: none">
 <div style="background: rgb(100 21 69);color: white;" align: center> 
 	<div style="float:left;">
     	<h6 class="card-header" style="font-weight: 500;">{{concert.concert_date}}</h6>
@@ -178,8 +202,15 @@ layout: default
     <h7 class="card-subtitle mb-2 text-muted"><small>{{concert.venue}}</small></h7>
 	<p class="card-text" style="font-style: normal"><small><i class="fas fa-map-pin"></i>&nbsp;{{concert.address}}</small></p>
   </div>
-	</div>
+	</div>`
+</script>
 {% endfor %}
+<script language="javascript">	  
+	  season_html += `</div>
+        					</div>
+    					</div>`
+				$("div .container").children("div").last().after(season_html);
+	  </script>
     </div>
   </div>
 </div>
@@ -337,63 +368,5 @@ layout: default
         );
       } // End if
     });
-	    // inspired by http://jsfiddle.net/arunpjohny/564Lxosz/1/
-   $('.table-responsive-stack').each(function (i) {
-      var id = $(this).attr('id');
-      //alert(id);
-      $(this).find("th").each(function(i) {
-         $('#'+id + ' td:nth-child(' + (i + 1) + ')').prepend('<span class="table-responsive-stack-thead">'+             $(this).text() + ':</span> ');
-         $('.table-responsive-stack-thead').hide();
-         
-      });
-      
-
-      
-   });
-
-   
-   
-   
-   
-$( '.table-responsive-stack' ).each(function() {
-  var thCount = $(this).find("th").length; 
-   var rowGrow = 100 / thCount + '%';
-   //console.log(rowGrow);
-   $(this).find("th, td").css('flex-basis', rowGrow);   
-});
-   
-   
-   
-   
-function flexTable(){
-   if ($(window).width() < 768) {
-      
-   $(".table-responsive-stack").each(function (i) {
-      $(this).find(".table-responsive-stack-thead").show();
-      $(this).find('thead').hide();
-   });
-      
-    
-   // window is less than 768px   
-   } else {
-      
-      
-   $(".table-responsive-stack").each(function (i) {
-      $(this).find(".table-responsive-stack-thead").hide();
-      $(this).find('thead').show();
-   });
-      
-      
-
-   }
-// flextable   
-}      
- 
-flexTable();
-   
-window.onresize = function(event) {
-    flexTable();
-};
-	  
   });
 </script>

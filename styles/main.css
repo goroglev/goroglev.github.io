@@ -412,3 +412,19 @@ textarea {
 .card-header {
 	background-color: rgba(0,0,0,0)!important;
 }
+
+.accordion .card-header.toggle:after {
+    font-family: 'FontAwesome';  
+    content: "\f068";
+    float: right; 
+}
+.accordion .card-header.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f067"; 
+}
+
+a.card-title:hover, 
+a.card-title:active, 
+a.card-title:focus  {
+    text-decoration:none;
+}
