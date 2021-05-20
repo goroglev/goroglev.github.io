@@ -36,7 +36,7 @@ layout: default
   </div>
   <br />
 
-  <h1>Bilder</h1>
+  <h1>Babylon ORCHESTRA</h1>
   <br />
   <div class="row">
     {% for pic in site.presspictures %}
@@ -52,6 +52,19 @@ layout: default
       <p>
         <strong>{{pic.photograph}}</strong>
       </p>
+        <h1>Babylon ORCHESTRA< Soloists/h1>
+  <br />
+  <div class="row">
+    {% for pic in site.presspictures %}
+    <div class="col-md-4">
+      <a href="../styles/press/pic/{{pic.image_path}}" target="_blank">
+        <img
+          src="../styles/press/pic/{{pic.image_path}}"
+          class="img-fluid"
+          alt="Random Name"
+          height="200"
+        />
+      </a>
     </div>
     {% endfor %}
   </div>
