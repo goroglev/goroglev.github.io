@@ -34,6 +34,11 @@ body::-webkit-scrollbar-thumb {
   padding-top: 130px;
 }
 
+.div-center {
+	margin: auto;
+	width: auto;
+}
+
 .blogjustify {
   text-align: justify;
   text-justify: inter-word;
@@ -399,4 +404,34 @@ textarea {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   border-radius: 0;
+}
+
+#mj-w-overlay {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#mj-w-popin-block {
+    margin: 17% auto!important;
+	/*width: 100%!important;*/
+}
+
+.card-header {
+	background-color: rgba(0,0,0,0)!important;
+}
+
+.accordion .card-header.toggle:after {
+    font-family: 'FontAwesome';  
+    content: "\f068";
+    float: right; 
+}
+.accordion .card-header.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f067"; 
+}
+
+a.card-title:hover, 
+a.card-title:active, 
+a.card-title:focus  {
+    text-decoration:none;
 }
