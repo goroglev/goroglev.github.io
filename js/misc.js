@@ -1,7 +1,12 @@
 // JavaScript Document
 
 function concertSeason(concertDateString) {
-	var concertDate = moment(concertDateString, 'DD.MM.YYYY', 'de')
+	if (typeof concertDateString === "undefined" || concertDateString === "") {
+		return undefined;
+	}
+	split = concertDateString.split("/");
+	_concertDateString = split[split.length-1];
+	var concertDate = moment(_concertDateString, 'DD.MM.YYYY', 'de')
 	var season = (concertDate.year()-1) + ' / ' + (concertDate.year()%100);
 	if (concertDate.month() > 7) { // Months start from 0 in js, so 7 is August
 								   // New seasons start in September.
