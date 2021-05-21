@@ -3,64 +3,43 @@ layout: default
 ---
 
 {% include aboutNavigation.html %}
-
-<div class="container aboutContainer text-center">
+<div class="container aboutContainer text-center"> 
   <!-- <div>About Block</div> -->
   <h3 class="text-center">ÜBER UNS</h3>
-  <p class="text-center">
-    <em
+  <p class="text-center"> <em
       >Unsere Antwort auf die multikulturelle Krise - <br />
-      mehr Respekt, mehr Kultur und mehr Musik</em
-    >
-  </p>
+    mehr Respekt, mehr Kultur und mehr Musik</em
+    > </p>
   <p class="text-center"><em>Sofia Surgutschowa und Mischa Tangian </em></p>
-  <p align="justify">
-    Mit dem Babylon Orchestra leisten wir seit Anfang 2016 aktiv unseren
+  <p align="justify"> Mit dem Babylon Orchestra leisten wir seit Anfang 2016 aktiv unseren
     Beitrag, den musikalischen Austausch zwischen Orient und Okzident zu
-    fördern.
-  </p>
-
-  <p align="justify">
-    Die Idee zur Gründung des Orchesters kam uns als wir auf der Suche nach
+    fördern. </p>
+  <p align="justify"> Die Idee zur Gründung des Orchesters kam uns als wir auf der Suche nach
     einer ganz persönlichen Antwort und Reaktion auf eine sich verändernde Welt
-    im Zusammenhang mit der Syrienkrise waren.
-  </p>
-
-  <p align="justify">
-    Musik und die Verbindung von verschiedenen Musikkulturen interessieren uns
+    im Zusammenhang mit der Syrienkrise waren. </p>
+  <p align="justify"> Musik und die Verbindung von verschiedenen Musikkulturen interessieren uns
     sehr. Als Wahlberliner mit russischen Wurzeln haben wir selbst Erfahrung mit
     Migration und Integration gemacht. Es ist für uns eine Herzensangelegenheit,
-    eine Brücke zwischen verschiedenen Kulturen zu bauen.
-  </p>
-  <p align="justify">
-    Unsere Musiker erarbeiten zusammen eigene Kompositionen, Arrangements sowie
+    eine Brücke zwischen verschiedenen Kulturen zu bauen. </p>
+  <p align="justify"> Unsere Musiker erarbeiten zusammen eigene Kompositionen, Arrangements sowie
     ein weniger bekanntes Repertoire aus ihrer Heimat. So lernen sie sich
     untereinander besser kennen und bringen den Menschen in ihrem Gastland, die
     sie willkommen geheißen habe, ihre Kultur in Konzerten und auch zahlreichen
-    Workshops näher.
-  </p>
-
+    Workshops näher. </p>
   <br />
   <h3>Unsere Workshop-Reihen</h3>
-  <p align="justify">
-    Im Rahmen unseres Projektes „Crossing Borders – Musik überwindet Grenzen“
+  <p align="justify"> Im Rahmen unseres Projektes „Crossing Borders – Musik überwindet Grenzen“
     haben wir 2017 erfolgreich verschiedene Workshops für und mit unseren
     Musikern für geladene Gäste organisiert. Profis und fortgeschrittenen
     Amateuren u.a. aus Syrien, der Türkei und dem Iran wurde der Einstieg in die
-    deutsche Musikszene erleichtert.
-  </p>
-
-  <p align="justify">
-    Die Förderung unseres Projektes „Foreign Rhythms - Baladi Gharib“ durch den
+    deutsche Musikszene erleichtert. </p>
+  <p align="justify"> Die Förderung unseres Projektes „Foreign Rhythms - Baladi Gharib“ durch den
     Arab Funds for Arts and Culture ermöglicht es uns Anfang 2018 vier
     Kompositionsaufträge an arabische und persische Musiker zu vergeben. Die
     beiden aus Syrien stammenden Violinisten und Komponisten MAias Alyamani und
     Ayman Hlal werden Workshops zu orientalischer Musik für Interessierte und
-    Profimusiker anbieten.
-  </p>
-
-  <p align="justify">
-    In unserem Projekt „Lieder zwischen Euphrat und Elbe - Neues zwischen den
+    Profimusiker anbieten. </p>
+  <p align="justify"> In unserem Projekt „Lieder zwischen Euphrat und Elbe - Neues zwischen den
     Strömen“ treffen Poesie und Literatur aus verschiedenen Kulturkreisen auf
     Musik. Sieben Komponisten sind eingeladen neue Stücke für die große
     Besetzung unseres Orchesters zu schreiben. Zugleich bieten wir jungen
@@ -68,70 +47,51 @@ layout: default
     Kulturraum die Chance ihre Texte in Lesungen sowie als Vertonungen
     vorzustellen. Kostenlose öffentliche Workshops zu arabischer und persischer
     Lyrik und Musik runden das durch den Hauptstadkulturfonds unterstützte
-    Projekt ab.
-  </p>
+    Projekt ab. </p>
 </div>
 <!-- <div>ORCHESTER</div> -->
 <div id="band" class="container aboutContainer text-center">
   <h3>ORCHESTER</h3>
   <br />
-  <div class="row">
-    {% for member in site.orchestra %}
-
+  <div class="row"> {% for member in site.orchestra %}
     <div class="col-md-3">
       <p><strong>{{member.name}}</strong></p>
-      <a href="#musician{{forloop.index}}" data-toggle="collapse">
-        <img
+      <a href="#musician{{forloop.index}}" data-toggle="collapse"> <img
           src="{{member.image_path}}"
           class="rounded-circle person"
           alt="Random Name"
           width="192"
           height="192"
-        />
-      </a>
+        /> </a>
       <div id="musician{{forloop.index}}" class="collapse">
         <p>{{member.task}}</p>
       </div>
     </div>
-    {% assign loopindex = forloop.index | modulo: 4 %} {% if loopindex == 0 %}
-  </div>
+    {% assign loopindex = forloop.index | modulo: 4 %} {% if loopindex == 0 %} </div>
   <br />
-  <div class="row">
-    {% endif %} {% endfor %}
-  </div>
-
+  <div class="row"> {% endif %} {% endfor %} </div>
   <br />
   <br />
-
   <h3>TEAM</h3>
-
-  <div class="row">
-    {% for member in site.team %}
-
+  <div class="row"> {% for member in site.team %}
     <div class="col-md-3">
       <p><strong>{{member.name}}</strong></p>
-      <a href="#collapse{{forloop.index}}" data-toggle="collapse">
-        <img
+      <a href="#collapse{{forloop.index}}" data-toggle="collapse"> <img
           src="{{member.image_path}}"
           class="rounded-circle person"
           alt="Random Name"
           width="192"
           height="192"
-        />
-      </a>
+        /> </a>
       <div id="collapse{{forloop.index}}" class="collapse">
         <p>{{member.task}}</p>
       </div>
     </div>
-
-    {% assign loopindex = forloop.index | modulo: 4 %} {% if loopindex == 0 %}
-  </div>
+    {% assign loopindex = forloop.index | modulo: 4 %} {% if loopindex == 0 %} </div>
   <br />
-  <div class="row">
-    {% endif %} {% endfor %}
-  </div>
+  <div class="row"> {% endif %} {% endfor %} </div>
 </div>
-<!-- Container (TOUR Section) -->
+<!-- Container (Galery Section) -->
 <div id="gale" class="bg-1">
   <div class="container aboutContainer">
     <h3 class="text-center">GALERIE</h3>
@@ -140,47 +100,53 @@ layout: default
     image.path contains '.s' %} {% assign counter=counter | plus:1 %} {%
     endunless %} {% endif %} {% endfor %} {% assign colunmLength = counter |
     divided_by: 3 %}
-
     <div class="rowg">
-      <div class="columng">
-        {% assign index = 1 %} {% assign colunmNumber = 1 %} {% for image in
+      <div class="columng"> {% assign index = 1 %} {% assign colunmNumber = 1 %} {% for image in
         site.static_files %} {% if image.path contains
         'styles/pictures/gallery/babylonAuswahl2' %} {% unless image.path
-        contains '.s' %}
-        <a
+        contains '.s' %} <a
           href="..{{ image.path }}"
           data-toggle="lightbox"
           data-gallery="example-gallery"
-        >
-          <img src="..{{ image.path }}.s" style="width:100%" />
-        </a>
-
-        {% assign loopindex = index | modulo: colunmLength %} {% if loopindex ==
-        0 and colunmNumber < 3%} {% assign colunmNumber=colunmNumber | plus:1 %}
-      </div>
-      <div class="columng">
-        {% endif %} {% assign index=index | plus:1 %} {% endunless %} {% endif
-        %} {% endfor %}
-      </div>
+        > <img src="..{{ image.path }}.s" style="width:100%" /> </a> {% assign loopindex = index | modulo: colunmLength %} {% if loopindex ==
+        0 and colunmNumber < 3%} {% assign colunmNumber=colunmNumber | plus:1 %} </div>
+      <div class="columng"> {% endif %} {% assign index=index | plus:1 %} {% endunless %} {% endif
+        %} {% endfor %} </div>
     </div>
   </div>
 </div>
-<!-- Container (The Band Section) -->
-<div id="musi" class="container aboutContainer text-center">
-  <h3>MUSIK</h3>
-  <br />
-  <div class="embed-responsive embed-responsive-16by9">
-    <iframe
-      width="1280"
-      height="720"
-      src="https://www.youtube.com/embed/C4hg7norXQo?rel=0&amp;start=18"
-      frameborder="0"
-      allow="autoplay; encrypted-media"
-      allowfullscreen
-    ></iframe>
+<!-- Container (Contact Section) -->
+<div id="contact" class="container aboutContainer">
+  <h3 class="text-center">KONTAKT</h3>
+  <p class="text-center"><em>We love our fans!</em></p>
+  <br>
+  <div class="row">
+    <div class="div-center">
+      <p> Sofia Surgutschowa und Mischa Tangian<br />
+      </p>
+      <p><i class="fas fa-map-pin"></i> Adalbert Straße 39 D- 10179 Berlin</p>
+      <p><i class="fas fa-phone"></i> +33 (0) 698 38 80 25 (Sofia)</p>
+      <p><i class="fas fa-phone"></i> +49 (0) 176 70081 541 (Mischa)</p>
+      <p> <i class="fas fa-envelope"></i> <a href="mailto:info@babylonorchestra.com">info@babylonorchestra.com</a> </p>
+      <p> Für Bookings und Konzertanfragen:<br />
+        <a href="mailto:management@babylonorchestra.com">management@babylonorchestra.com</a> </p>
+      <data id="mj-w-res-data" data-token="2e1f87496c55aea8526f9d8e2de5b2bc" class="mj-w-data" data-apikey="4AKe" data-w-id="IFA" data-lang="de_DE" data-base="https://email-marketing.ionos.de" data-width="640" data-height="360.4" data-statics="statics"></data>
+      <div class="mj-w-button mj-w-btn" style="font-family: Ubuntu, Helvetica; color: white; padding: 0 25px; background-color: #f0622b; text-align: center; vertical-align: middle; display: block; border-radius: 3px;" data-token="2e1f87496c55aea8526f9d8e2de5b2bc">
+        <div style="display: table; height: 45px; margin: auto">
+          <div style="display: table-cell; vertical-align: middle;">
+            <div class="mj-w-button-content" style="font-family:Ubuntu, Helvetica; display: inline-block; text-align: center; font-size: 13px; vertical-align: middle;"><b>NEWSLETTER ABONNIEREN!</b></div>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript" src="https://email-marketing.ionos.de/statics/js/widget.modal.js"></script> 
+    </div>
   </div>
 </div>
-
+<script>
+	$('#mj-w-iframe').on('load', function() {
+		alert(loaded);
+  	});	
+</script>
 <script>
   $(document).ready(function() {
     // Initialize Tooltip
@@ -211,7 +177,7 @@ layout: default
       } // End if
     });
   });
-</script>
+</script> 
 <script>
   $(document).on("click", '[data-toggle="lightbox"]', function(event) {
     event.preventDefault();
