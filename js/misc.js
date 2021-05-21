@@ -1,3 +1,5 @@
+// JavaScript Document
+
 function concertSeason(concertDateString) {
 	if (typeof concertDateString === "undefined" || concertDateString === "") {
 		return undefined;

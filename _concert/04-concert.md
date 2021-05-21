@@ -1,8 +1,9 @@
 ---
 image_path: /styles/pictures/concert/ufaWeb3.png
 venue: 'ufaFabrik'
-concert_date: Son, 24.03.2019 | 19 Uhr
+concert_date: 24.03.2019
 title: 'Babylon ORCHESTRA soloists feat. Mohannad Nasser'
 address: Viktoriastr. 10-18 , 12105 Berlin 
-details: <a target="_blank" href="https://ufafabrik.reservix.de/p/reservix/group/296850">Tickets</a>
+city: Berlin
+details: https://ufafabrik.reservix.de/p/reservix/group/296850
 ---
