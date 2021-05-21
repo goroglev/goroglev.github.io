@@ -52,10 +52,10 @@ layout: default
     </a>
   </div>
 
-<div class="container text-center">
-   {% assign lastVideo = site.musicVideos | reverse | first %}
+  <br />
+  {% assign lastVideo = site.musicVideos | reverse | first %}
 
-  <div class="embed-responsive embed-responsive-16by9" style="width: 100%; margin: 0 auto">
+  <div class="embed-responsive embed-responsive-16by9">
     <iframe
       width="640"
       height="360"
@@ -63,9 +63,11 @@ layout: default
       frameborder="10"
       allow="autoplay; encrypted-media"
     ></iframe>
-</div> 
-<br><br><br>	
-<h1>BABYLON ORCHESTRA</h1>
+  </div>
+</div>
+
+<div class="container text-center">
+  <h1>BABYLON ORCHESTRA</h1>
   <p><em>Kulturelle Vielfalt leben - im Herzen Berlins</em></p>
 
   {% for post in site.posts limit:1 %}
@@ -177,11 +179,6 @@ layout: default
 </div>
 
 <!-- TOUR (News  Section) -->
-<script language="javascript">
-	seasons = [];
-	season_html = '';
-</script>
-
 <div id="tour" class="bg-1">
   <div class="container">
     <h3 class="text-center">KONZERTE</h3>
@@ -189,68 +186,148 @@ layout: default
       Wir spielen auch bald in Ihrer N&#xE4;he <br />Sichern Sie sich Ihre
       Tickets.
     </p>
-	  <br />
-	<div></div>
 
-	  {% for concert in site.concert reversed %}
-	<script language="javascript">
-		prev_season = seasons.pop();
-		season = concertSeason('{{concert.concert_date}}');
-		if (season_html == '' || prev_season != season) {
-			if (typeof prev_season !== "undefined" && prev_season != season) {			
-				season_html += `</div>
-        					</div>
-    					</div>`
-				$("div .container").children("div").last().after(season_html);
-				season_html = '';
-				}
-			var collapse = 'card-body collapse';
-			var collapsed = '';
-			if ({{forloop.index}} <= 2) {
-				collapse += ' show';
-			} else {
-				collapsed += ' collapsed';
-			}
-			season_html += `<div id="accordion{{forloop.index}}" class="accordion">
-        <div class="card" style="background-color: #333;">			
-            <div class="card-header toggle` + collapsed + `" data-toggle="collapse" href="#collapse{{forloop.index}}" style="font-style: normal; font-weight:1000; font-size:large;">
-                <a class="card-title">` + season +
-			`</a>
+    <div class="row text-center">
+      {% for concert in site.concert reversed %}
+
+      <div class="col-md-4">
+        <div class="thumbnail bg-light">
+          <img
+            src="{{concert.image_path}}"
+            class="img-thumbnail"
+            alt="San Francisco"
+            height="280"
+          />
+          <p><strong>{{concert.venue }}</strong></p>
+          <p>{{concert.concert_date}}</p>
+          <button
+            class="btn"
+            data-toggle="modal"
+            data-target="#modal{{forloop.index}}"
+          >
+            Details
+          </button>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modal{{forloop.index}}" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header"></div>
+              <div class="modal-body blackFont">
+                <h2>{{concert.title}}</h2>
+                <p><i class="fas fa-location-arrow"></i> {{concert.address}}</p>
+                <p>{{concert.details}}</p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="submit"
+                  class="btn btn-danger btn-secondary float-left"
+                  data-dismiss="modal"
+                >
+                  Cancel
+                </button>
+                <p>Need <a href="#">help?</a></p>
+              </div>
             </div>
-            <div id="collapse{{forloop.index}}" class="` + collapse + `" data-parent="#accordion{{forloop.index}}">`;
-			//season_html = '<p style="background-color: #333;font-style: normal; font-weight:1000; font-size:large;margin-top: 1rem;">' + season + '</p>';			
-		};
-		seasons.push(season);
-	  
-	  season_html += `<div class="card bg-light" align="left" style="color: black; margin-top: 10px; margin-bottom: 10px; border: none">
-<div style="background: #484d51; color: white;" align: center> 
-	<div style="float:left;">
-    	<h6 class="card-header" style="font-weight: 500;">{{concert.concert_date}}</h6>
-  	</div>
-	<div style="float:right;">
-    	<h6 class="card-header"><a href="{{concert.details}}" class="card-link"><small>Tickets/Details</small></a></h6>
-  	</div>
-</div>
-
-<div class="card-body" style="background: #70471d14; padding: .9rem">
-    <h6 class="card-title" style="margin-bottom: 0;"><small>{{concert.title}}</small></h6>
-    <h7 class="card-subtitle mb-2 text-muted"><small>{{concert.venue}}</small></h7>
-	<p class="card-text" style="font-style: normal"><small><i class="fas fa-map-pin"></i>&nbsp;{{concert.address}}</small></p>
-  </div>
-	</div>`
-</script>
-{% endfor %}
-<script language="javascript">	  
-	  season_html += `</div>
-        					</div>
-    					</div>`
-				$("div .container").children("div").last().after(season_html);
-	  </script>
+          </div>
+        </div>
+      </div>
+      {% assign loopindex = forloop.index | modulo: 3 %} {% if loopindex == 0 %}
     </div>
+    <br />
+    <div class="row text-center">{% endif %} {% endfor %}</div>
+    <br />
+
+    <!-- Container (WORKSHOP  Section) -->
+
+    <h3 class="text-center">WORKSHOP</h3>
+    <p class="text-center">Nehmen Sie teil an einem unserer Workshops</p>
+
+    <div class="row text-center">
+      {% for workshop in site.workshop %}
+
+      <div class="col-md-4">
+        <div class="thumbnail bg-light">
+          <img
+            src="{{workshop.image_path}}"
+            class="img-thumbnail"
+            alt="San Francisco"
+            height="280"
+          />
+          <p><strong>{{workshop.venue }}</strong></p>
+          <p>{{workshop.concert_date}}</p>
+          <button
+            class="btn"
+            data-toggle="modal"
+            data-target="#workshop{{forloop.index}}"
+          >
+            Details
+          </button>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="workshop{{forloop.index}}" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-body blackFont">
+                <h2>{{workshop.title}}</h2>
+                <p>
+                  <i class="fas fa-location-arrow"></i> {{workshop.address}}
+                </p>
+                <p>{{workshop.details}}</p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="submit"
+                  class="btn btn-danger btn-secondary float-left"
+                  data-dismiss="modal"
+                >
+                  Cancel
+                </button>
+                <p>Need <a href="#">help?</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% assign loopindex = forloop.index | modulo: 3 %} {% if loopindex == 0 %}
+    </div>
+    <br />
+    <div class="row text-center">{% endif %} {% endfor %}</div>
+    <br />
   </div>
 </div>
 
 <!-- Container (News  Section) -->
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container">
+  <h3 class="text-center">KONTAKT</h3>
+  <p><em>We love our fans!</em></p>
+  <p>
+    Sofia Surgutschowa und<br />
+    Mischa Tangian<br />
+    Adalbert Straße 39 <br />
+    D- 10179 Berlin
+  </p>
+  <p><i class="fas fa-phone"></i> +33 (0) 698 38 80 25 (Sofia)</p>
+  <p><i class="fas fa-phone"></i> +49 (0) 176 70081 541 (Mischa)</p>
+  <p>
+    <i class="fas fa-envelope"></i>
+    <a href="mailto:info@babylonorchestra.com">info@babylonorchestra.com</a>
+  </p>
+  <p>
+    Für Bookings und Konzertanfragen:<br />
+    <a href="mailto:management@babylonorchestra.com"
+      >management@babylonorchestra.com</a
+    >
+  </p>
+  <br />
+</div>
+
 <div id="sponsors" class="container text-center">
   <h3>Unsere Partner</h3>
   <br />
