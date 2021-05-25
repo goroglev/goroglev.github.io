@@ -1,14 +1,14 @@
 <nav class="navbar navbar-light fixed-top fixed-top-2 navbar-expand-lg">
-  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#myNavbar2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <button id="film-menu-toggler" class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#myNavbar2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
         </button>
   <div class="collapse navbar-collapse" id="myNavbar2">
     <ul class="nav navbar-nav ml-auto">
-      <li class="nav-item"><a href="#story" class="nav-link">STORY</a>
+      <li class="nav-item"><a href="#story" class="nav-link" onClick="if (isDevice()) {$('#film-menu-toggler').click();}">STORY</a>
       </li>
-	  <li class="nav-item"><a href="#stills" class="nav-link">STILLS</a>
+	  <li class="nav-item"><a href="#stills" class="nav-link" onClick="if (isDevice()) {$('#film-menu-toggler').click();}">STILLS</a>
       </li>
-	  <li class="nav-item"><a href="#" class="nav-link">PEOPLE</a>
+	  <li class="nav-item"><a href="#" class="nav-link" onClick="if (isDevice()) {$('#film-menu-toggler').click();}">PEOPLE</a>
       </li>
     </ul> <span style="display:inline-block; width: 5em;"></span>
   </div>
