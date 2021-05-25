@@ -8,13 +8,13 @@ layout: default
   <h1>UNSERE FREMDEN</h1>
   <br />	
   <div class="blogjustify">
-	<img src="/styles/pictures/film/Hala_and_Aziz.png" alt="Basma Al Jabr and Mischa Tangian (as Hala and Aziz)" style="width: 100%; margin:0 auto" />
+	<img src="/styles/pictures/film/Hala_and_Aziz_res.png" alt="Basma Al Jabr and Mischa Tangian (as Hala and Aziz)" style="width: 100%; margin:0 auto" />
 	<br /><br />
 	<div class="embed-responsive embed-responsive-16by9">
           <iframe
             width="1280"
             height="720"
-            src="https://www.youtube.com/embed/_e9S8ksDeAM"
+            src="https://www.youtube.com/embed/r6_K_j9TGCQ"
             frameborder="0"
             allow="autoplay; encrypted-media"
             allowfullscreen
@@ -51,4 +51,45 @@ After WWI and WWII millions of people were displaced away from Europe into the A
 <br><br>
 <i>--Neil Barry Moss</i>
 	</div>
+<!--
+	<h2 id="stills">Stills</h3>
+	 <div class="row">
+    {% for pic in site.stills %}
+    <div class="col-md-4">
+      <a href="..{{image.path}}" target="_blank">
+        <img
+          src="..{{pic.image_path}}"
+          class="img-fluid"
+          alt="Random Name"
+          height="200"
+        />
+      </a>      
+    </div>
+    {% endfor %}
+  </div>
+-->	
+<br>
+<h2 id="stills">Stills</h3>
+	<br>
+	<div id="gale" class="bg-1">
+    <div class="rowg">
+      <div class="columng"> {% assign colunmLength = 2 %} {% assign index = 1 %} {% assign colunmNumber = 1 %} {% for image in site.static_files %} {% if image.path contains
+        'styles/pictures/stills/' %} <a
+          href="..{{ image.path }}"
+          data-toggle="lightbox"
+          data-gallery="example-gallery"
+        > <img src="..{{ image.path }}" style="width:100%" /> </a> {% assign loopindex = index | modulo: colunmLength %} {% if loopindex ==
+        0 and colunmNumber < 3%} {% assign colunmNumber=colunmNumber | plus:1 %} </div>
+      <div class="columng"> {% endif %} {% assign index=index | plus:1 %} {% endif %} {% endfor %} </div>
+    </div>
+  </div>
+	
 </div>
+</div>
+
+<script>
+  $(document).on("click", '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+  });
+</script>
