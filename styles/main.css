@@ -439,3 +439,11 @@ a.card-title:focus  {
 .anchor {
     padding-top: 90px;
 }
+
+div#last-child{
+  align-self:flex-end;
+}
+
+#first-element{
+align-self:flex-start;
+}
