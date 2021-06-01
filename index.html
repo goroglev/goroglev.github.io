@@ -52,7 +52,6 @@ layout: default
     </a>
   </div>
 </div>
-
 <div class="container text-center">
    {% assign lastVideo = site.musicVideos | reverse | first %}
 
@@ -68,48 +67,44 @@ layout: default
 <br><br><br>	
 <h1>BABYLON ORCHESTRA</h1>
   <p><em>Kulturelle Vielfalt leben - im Herzen Berlins</em></p>
+
+  {% for post in site.posts limit:1 %}
   <p align="justify">
-  <p>
-    <u>Tolle Neuigkeiten!</p> Das <a target="_blank" href="https://babylonorchester.github.io/compactDisk/">Babylon ORCHESTRA Debut Album</a> hat es auf die <b>Bestenliste </b> des <a target="_blank" href="https://www.schallplattenkritik.de/bestenlisten/2020/04#win1513">Preis der deutschen Schallplattenkritik </a> geschafft!</u></p>
-<div>
-  <img src="/styles/pictures/preis_schallplattenkritik_bestenliste.jpg" width="300" height="300"align="left" hspace="10" vspace="10">
-  <img src="/styles/pictures/Babylon_Tor_WARM1d.jpeg" width="400" height="400"align="left" hspace="10" vspace="10">
-  </div>
-<div>
-  <p align="justify">
-      <p>
-        </p>         
-  <p>
-     <br />
-     <br />
-     <br />
-     <br />
-    Das Album ist auch erhältlich auf <a target="_blank" href="https://open.spotify.com/artist/2YfCVOGiOf90FwKBDWplw6">Spotify</a>,
-    <a target="_blank" href="https://sungroove.de/lp-babylon-orchestra-babylon-orchestra">iTunes</a>,
-    <a target="_blank" href="https://www.deezer.com/de/">DEEZER</a> 
-    und exklusiv als <u>digitaler Download in<br />
-    94 kHz/24 Bit Auflösung</u> über unseren Partner<br />
-    <a target="_blank" href="https://www.highresaudio.com/de/album/view/ncfqxc/babylon-orchestra-babylon-orchestra">HIGHRESAUDIO!</a>
-    <br />
-    <br />
+    {{post.date | date_to_string }}
+    <a href="{{ post.url }}" class="linkBlack"><b>{{ post.title }}</b></a>
   </p>
-   <br />
-   <br />
+  <div class="blogjustify">{{ post.excerpt }}</div>
+  {% endfor %}
+	<br>
+	<p align="justify"><b>TOLLE NEUIGKEITEN! NEUE EP im Sommer 2021!
+Wir nehmen bald unser ZWEITES ALBUM auf -
+		Für mehr Infos - schaut auf <a href="https://business.facebook.com/babylonorchestra/" target="_blank">facebook</a> und <a href="https://www.instagram.com/babylonorchestra/" target="_blank">instagram!</a></b></p>
+  
+		  <data id="mj-w-res-data" data-token="2e1f87496c55aea8526f9d8e2de5b2bc" class="mj-w-data" data-apikey="4AKe" data-w-id="IFA" data-lang="de_DE" data-base="https://email-marketing.ionos.de" data-width="640" data-height="360.4" data-statics="statics"></data>
+  <div class="mj-w-button mj-w-btn" style="font-family: Ubuntu, Helvetica; color: white; padding: 0 25px; background-color: #f0622b; text-align: center; vertical-align: middle; display: block; border-radius: 3px; width: 230px; margin: auto" data-token="2e1f87496c55aea8526f9d8e2de5b2bc">
+	<div style="display: table; height: 45px; margin: auto">
+	  <div style="display: table-cell; vertical-align: middle;">
+		<div class="mj-w-button-content" style="font-family:Ubuntu, Helvetica; display: inline-block; text-align: center; font-size: 13px; vertical-align: middle;"><b>NEWSLETTER ABONNIEREN!</b></div>
+	  </div>
+	</div>
+  </div>
+  <script type="text/javascript" src="https://email-marketing.ionos.de/statics/js/widget.modal.js"></script> 
+<br><br>
   <p align="justify">
     <b>Babylon ORCHESTRA </b> ist ein junges Berliner Ensemble für urbane
     nahöstliche Musik - bestehend aus zirka 15 MusikerInnen und SängerInnen aus
     Syrien, Iran, Irak, Israel, Russland, Italien, Frankreich, Kurdistan und
     Deutschland. Die Idee zu dessen Gründung kam Mischa Tangian und Sofia
-    Surgutschowa Anfang 2016, als sie nach einer ganz persönlichen
-    Antwort und Reaktion auf eine sich verändernde Welt mit neuen
-    Formen des kulturellen Miteinanders suchten.
+    Surgutschowa Anfang 2016, als sie nach einer ganz persönlichen Antwort und
+    Reaktion auf eine sich verändernde Welt mit neuen Formen des kulturellen
+    Miteinanders suchten.
   </p>
   <p align="justify">
-    Ziel des Orchesters ist es, den künstlerischen Austausch zwischen den 
-    musikalischen Kulturen des Nahen und Mittleren Ostens und den 
-    musikalischen Kulturen Europas zu fördern. Das Ensemble erarbeitet ein 
-    Repertoire, das eine Verbindung zwischen traditioneller nahöstlicher Musik
-    und zeitgenössisch-moderner Musik mit urbanen Elementen der Berliner Musikszene
+    Ziel des Orchesters ist es, den künstlerischen Austausch zwischen den
+    musikalischen Kulturen des Nahen und Mittleren Ostens und den musikalischen
+    Kulturen Europas zu fördern. Das Ensemble erarbeitet ein Repertoire, das
+    eine Verbindung zwischen traditioneller nahöstlicher Musik und
+    zeitgenössisch-moderner Musik mit urbanen Elementen der Berliner Musikszene
     in Einklang bringt. Im Vordergrund stehen zeitgenössische Kompositionen von
     KomponistInnen, die für Babylon ORCHESTRA schreiben oder ihre existierenden
     Werke an die Besetzung anpassen. Außer den Eigen- und Neukompositionen
@@ -118,29 +113,72 @@ layout: default
   </p>
   <p align="justify">
     Das Ensemble fördert insbesondere neue Kreationen, in die sich MusikerInnen
-    aus allen Kulturkreisen einbringen können, da es nur in einer zeitgemäßen Musik
-    eine Chance für einen ehrlichen, persönlichen künstlerischen Ausdruck sieht
-    und die Weiterentwicklung der musikalischen Sprache als Möglichkeit für den
-    Anschluss der Tradition an das Heute und Jetzt versteht.
+    aus allen Kulturkreisen einbringen können, da es nur in einer zeitgemäßen
+    Musik eine Chance für einen ehrlichen, persönlichen künstlerischen Ausdruck
+    sieht und die Weiterentwicklung der musikalischen Sprache als Möglichkeit
+    für den Anschluss der Tradition an das Heute und Jetzt versteht.
   </p>
   <p align="justify">
     Eines der weitergehenden Ziele ist es, die Mitglieder des Orchesters dabei
     zu unterstützen, in Deutschland und Europa musikalisch Fuß zu fassen und
     somit aktiv und kreativ zur Integration beizutragen. Dies hilft den
-    geflüchteten MusikerInnen eine Basis in ihrer neuen Heimat aufzubauen.
-    Auch die europäischen MusikerInnen gewinnen durch die Zusammenarbeit und
-    können durch das Orchester ihre Neigung zur nahöstlichen Musik professionell
+    geflüchteten MusikerInnen eine Basis in ihrer neuen Heimat aufzubauen. Auch
+    die europäischen MusikerInnen gewinnen durch die Zusammenarbeit und können
+    durch das Orchester ihre Neigung zur nahöstlichen Musik professionell
     weiterentwickeln.
   </p>
   <p align="justify">
-    Außer der großen Besetzung tritt das Babylon ORCHESTRA auch in
-    kleineren Formationen als Babylon ORCHESTRA soloists auf (zwischen
-    drei und acht Musikern).
+    Außer der großen Besetzung tritt das Babylon ORCHESTRA auch in kleineren
+    Formationen als Babylon ORCHESTRA soloists auf (zwischen drei und acht
+    Musikern).
+  </p><br>
+	<p align="justify"><b>
+    Das<a target="_blank" href="https://babylonorchester.github.io/compactDisk/">
+		Babylon ORCHESTRA Debut Album</a>
+      hat es auf die <b>Bestenliste </b> des
+      <a
+        target="_blank"
+        href="https://www.schallplattenkritik.de/bestenlisten/2020/04#win1513"
+        >Preis der deutschen Schallplattenkritik
+      </a>
+      geschafft!</b> Das Album ist auch erhältlich auf
+    <a
+      target="_blank"
+      href="https://open.spotify.com/artist/2YfCVOGiOf90FwKBDWplw6"
+      >Spotify</a
+    >,
+    <a
+      target="_blank"
+      href="https://sungroove.de/lp-babylon-orchestra-babylon-orchestra"
+      >iTunes</a
+    >,
+    <a target="_blank" href="https://www.deezer.com/de/">DEEZER</a>
+    und exklusiv als digitaler Download in 94 kHz/24 Bit Auflösung über unseren Partner
+    <u><a
+      target="_blank"
+      href="https://www.highresaudio.com/de/album/view/ncfqxc/babylon-orchestra-babylon-orchestra"
+      >HIGHRESAUDIO!</a
+		></u>
   </p>
+  <div class="row text-center my-3">
+    <img
+      src="/styles/pictures/preis_schallplattenkritik_bestenliste.jpg"
+      width="200"
+      height="200"
+      class="img-responsive center-block d-block mx-auto"
+    />
+    <img
+      src="/styles/pictures/Babylon_Tor_WARM1d.jpeg"
+      class="img-responsive center-block d-block mx-auto"
+      style="max-width: 200px; width: 100%"
+    />
+  </div>
+</div>
 
 <!-- TOUR (News  Section) -->
 <script language="javascript">
-	seasons = [];
+	nr_seasons = 0;
+	prev_season = undefined;
 	season_html = '';
 </script>
 
@@ -156,7 +194,6 @@ layout: default
 
 	  {% for concert in site.concert reversed %}
 	<script language="javascript">
-		prev_season = seasons.pop();
 		season = concertSeason('{{concert.concert_date}}');
 		if (season_html == '' || prev_season != season) {
 			if (typeof prev_season !== "undefined" && prev_season != season) {			
@@ -164,11 +201,12 @@ layout: default
         					</div>
     					</div>`
 				$("div .container").children("div").last().after(season_html);
-				season_html = '';
+				season_html = '';				
 				}
+			nr_seasons += 1;
 			var collapse = 'card-body collapse';
 			var collapsed = '';
-			if ({{forloop.index}} <= 2) {
+			if (nr_seasons <= 2) {
 				collapse += ' show';
 			} else {
 				collapsed += ' collapsed';
@@ -182,7 +220,7 @@ layout: default
             <div id="collapse{{forloop.index}}" class="` + collapse + `" data-parent="#accordion{{forloop.index}}">`;
 			//season_html = '<p style="background-color: #333;font-style: normal; font-weight:1000; font-size:large;margin-top: 1rem;">' + season + '</p>';			
 		};
-		seasons.push(season);
+		prev_season = season;
 	  
 	  season_html += `<div class="card bg-light" align="left" style="color: black; margin-top: 10px; margin-bottom: 10px; border: none">
 <div style="background: #484d51; color: white;" align: center> 
@@ -213,7 +251,6 @@ layout: default
 </div>
 
 <!-- Container (News  Section) -->
-
 <div id="sponsors" class="container text-center">
   <h3>Unsere Partner</h3>
   <br />
@@ -292,7 +329,10 @@ layout: default
   <br />
   <br />
 
-    <a target="_blank" href="https://www.schallplattenkritik.de/bestenlisten/2020/04#win1513">
+  <a
+    target="_blank"
+    href="https://www.schallplattenkritik.de/bestenlisten/2020/04#win1513"
+  >
     <img
       src="styles/pictures/sponsors/preis_schallplattenkritik_bestenliste.jpg"
       alt="fonds"
@@ -326,7 +366,7 @@ layout: default
         width="720"
     /></a>
   </p>
-   <a target="_blank" href="http://www.https://www.kulturstiftung-des-bundes.de">
+  <a target="_blank" href="http://www.https://www.kulturstiftung-des-bundes.de">
     <img
       src="styles/pictures/sponsors/kulturstiftung_des_deutcshen_bundes.jpg"
       alt="fonds"
@@ -334,15 +374,16 @@ layout: default
       width="300"
     />
   </a>
-  <p>
+  <p></p>
 </div>
+
 <script>
-  $(document).ready(function() {
+  $(document).ready(function () {
     // Initialize Tooltip
     $('[data-toggle="tooltip"]').tooltip();
 
     // Add smooth scrolling to all links in navbar + footer link
-    $(".navbar a, footer a[href='#myPage']").on("click", function(event) {
+    $(".navbar a, footer a[href='#myPage']").on("click", function (event) {
       // Make sure this.hash has a value before overriding default behavior
       if (this.hash !== "") {
         // Prevent default anchor click behavior
@@ -355,10 +396,10 @@ layout: default
         // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
         $("html, body").animate(
           {
-            scrollTop: $(hash).offset().top
+            scrollTop: $(hash).offset().top,
           },
           900,
-          function() {
+          function () {
             // Add hash (#) to URL when done scrolling (default click behavior)
             window.location.hash = hash;
           }

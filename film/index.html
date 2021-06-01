@@ -8,17 +8,120 @@ layout: default
   <h1>UNSERE FREMDEN</h1>
   <br />	
   <div class="blogjustify">
-	<img src="/styles/pictures/film/Hala_and_Aziz.png" alt="Basma Al Jabr and Mischa Tangian (as Hala and Aziz)" style="width: 100%; margin:0 auto" />
+	<img src="/styles/pictures/film/Hala_and_Aziz_res.png" alt="Basma Al Jabr and Mischa Tangian (as Hala and Aziz)" style="width: 100%; margin:0 auto" />
 	<br /><br />
 	<div class="embed-responsive embed-responsive-16by9">
           <iframe
             width="1280"
             height="720"
-            src="https://www.youtube.com/embed/_e9S8ksDeAM"
+            src="https://www.youtube.com/embed/r6_K_j9TGCQ"
             frameborder="0"
             allow="autoplay; encrypted-media"
             allowfullscreen
           ></iframe>
 	</div> 
   </div>
+	<h2 id="story" class="anchor">Story</h2>
+	<br>
+	<div class="blogjustify">
+		<i>Unsere Fremden</i> is a continuing story about those among us that we often fail to notice. The strangers in our community who occupy the news reports as number and statistics, but whose personal stories rarely occupy our minds.
+<br><br>
+This short film is the beginning of their story. 
+<br><br>
+The tale of three characters, Sarah, Aziz and Hala whose lives collide in unexpected ways. It’s something that we hope to continue after this with your support, as part of a bigger project, a project that involves opera, film and music about the souls who are trying to make it in Germany. We hope you enjoy watching it as much as we enjoyed making it, and let us know if you wanna see more of it!
+<br><br>
+<b><u>Synopsis</u></b>
+<br>
+In a white male dominated Europe, North African Sara runs an EU emigrations office. Although raised by European parents, her appearance speaks of her heritage and threatens her position and office. Unknown to Sara, her past catches up with her in the form of her ex-husband Azis. He and his girlfriend, Syrian refugee Hala are both seeking asylum, a choice that rests solely in Sara’s hands. 
+<br>
+Sara, shocked seeing him again, decides to grant Hala’s request but denies that of Azis. Although Sara takes revenge on Azis, she also breaks up a family - Hala is pregnant.
+<br><br>
+<b><u>Directors’ Statement</u></b>
+<br>
+The question I ask myself is, “what are we willing to do to be accepted in a foreign country?”.
+<br>
+Does a part of us, an old self, have to die for us to belong? When do we fit in? Is it when we renounce our background and our heritage? Or when we adopt the identity and norms of the country in which we find ourselves?
+<br>
+It begs the question, when is one finally integrated? When one speaks the language? When you betray your own? Are the children born on foreign soil, immigrants’ children or 1st generation native europeans?
+<br><br>
+With the 2015 wave of immigrants into Europe we now see a new generation of intercultural self hate and lack of identity. Is home wherever the heart is or when this heart can speak 3 languages and pays European taxes. A question we won't be able to answer unless we keep telling these stories.
+<br><br>
+After WWI and WWII millions of people were displaced away from Europe into the Americas and the UK. Now we see a world where there’s a struggle for Europe. Europe is changing whether it wants to or not. The Stories of the individuals shaping and affecting that change is both exciting and essential to the narrative in 2021.&nbsp;&nbsp;<i>--Neil Barry Moss</i>
+	</div>
+<!--
+	<h2 id="stills">Stills</h3>
+	 <div class="row">
+    {% for pic in site.stills %}
+    <div class="col-md-4">
+      <a href="..{{image.path}}" target="_blank">
+        <img
+          src="..{{pic.image_path}}"
+          class="img-fluid"
+          alt="Random Name"
+          height="200"
+        />
+      </a>      
+    </div>
+    {% endfor %}
+  </div>
+-->	
+<h2 id="stills" class="anchor">Stills</h3>
+	<br>
+	<div id="gale" class="bg-1">
+    <div class="rowg">
+      <div class="columng"> {% assign colunmLength = 2 %} {% assign index = 1 %} {% assign colunmNumber = 1 %} {% for image in site.static_files %} {% if image.path contains
+        'styles/pictures/stills/' %} <a
+          href="..{{ image.path }}"
+          data-toggle="lightbox"
+          data-gallery="example-gallery"
+        > <img src="..{{ image.path }}" style="width:100%" /> </a> {% assign loopindex = index | modulo: colunmLength %} {% if loopindex ==
+        0 and colunmNumber < 3%} {% assign colunmNumber=colunmNumber | plus:1 %} </div>
+      <div class="columng"> {% endif %} {% assign index=index | plus:1 %} {% endif %} {% endfor %} </div>
+    </div>
+  </div>
+
+<h2 id="people" class="anchor">People</h3>
+	<br>
+	<div class="container justify-content-md-center text-justify" style="padding: 15px 20px">
+		<p style="font-weight:1000; font-size:large; text-align: left">SINA - Director / director of photography / editing</p>
+		<div class="row">
+			<div class="col-md"></div>
+			<div class="col-md-3" style="padding-bottom: 10px; padding-top: 5px">
+			<img src="/styles/pictures/film/sina.jpg" style="width: 100%"/>
+			</div>
+		<div class="col-md-8">
+			 <p>Sina Salimi is born and raised in Tehran. He moved to Europe in 2015, where he studied film directing in Portugal, Scotland and Estonia. 
+
+His short film “Roof Knocking” which was produced in Estonia has received critical acclaim and won the award for best short film at the Cairo International Film Festival. He is currently based in Berlin, where he is working on his first feature film.</p> 
+			</div>
+
+			<!--<div id="last-child">NEIL - Director / set design<img  src="/styles/pictures/film/neil.jpg" style="width: 25%"/></div-->
+		</div>
+		<br>
+		<p style="font-weight:1000; font-size:large; text-align: left">NEIL - Director / set design</p>
+		<div class="row">
+			<div class="col-md"></div>
+			<div class="col-md-3" style="padding-bottom: 10px; padding-top: 5px">
+			<img src="/styles/pictures/film/neil.jpg" style="width: 100%"/>
+			</div>
+		<div class="col-md-8">
+			 Neil was born in South Africa and studied Opera and Performance in Cape Town and Verona, Italy.
+
+He worked at the Hannover Staatsoper as in-house Stage Director, Costume Designer and Assistant Stage Director from 2016-19. <a id="read_more_neil" data-toggle="collapse" href="#collapseNeil" role="button" aria-expanded="false" aria-controls="collapseNeil" onClick="if ($('#read_more_neil').text().trim() === 'Read more...') $('#read_more_neil').text('Read less...'); else $('#read_more_neil').text('Read more...');">
+    Read more...
+  </a>
+<div class="collapse" id="collapseNeil">			
+			In 2018 he directed to critical acclaim the world premiere of the opera “Die drei Spinnerinnen” by Gregor Mayrhofer.In June of the same year he was the runner up in the 10th European Opera Directing Prize in Zurich, Switzerland. Since June 2019, Neil has worked as in-house Stage Director, Costume Designer and Assistant Stage Director at the Deutsche Oper Berlin. In June 2020 he made his House Debut with »Das Rheingold auf dem Parkdeck«.Currently Neil is assisting Stefan Herheim in his new “Ring des Nibelungen” opera cycle at DOB.
+			</div>
+			<!--<div id="last-child">NEIL - Director / set design<img  src="/styles/pictures/film/neil.jpg" style="width: 25%"/></div-->
+		</div>
+	</div>
 </div>
+</div>
+
+<script>
+  $(document).on("click", '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+  });
+</script>
