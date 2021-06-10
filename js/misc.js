@@ -1,5 +1,16 @@
 // JavaScript Document
 
+function concertYear(concertDateString) {
+	if (typeof concertDateString === "undefined" || concertDateString === "") {
+		return undefined;
+	}
+	split = concertDateString.split("/");
+	_concertDateString = split[split.length-1];
+	var concertDate = moment(_concertDateString, 'DD.MM.YYYY', 'de')
+	return concertDate.year();
+}
+
+
 function concertSeason(concertDateString) {
 	if (typeof concertDateString === "undefined" || concertDateString === "") {
 		return undefined;

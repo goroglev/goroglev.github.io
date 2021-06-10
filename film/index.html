@@ -8,7 +8,7 @@ layout: default
   <h1>UNSERE FREMDEN</h1>
   <br />	
   <div class="blogjustify">
-	<img src="/styles/pictures/film/Hala_and_Aziz_res.png" alt="Basma Al Jabr and Mischa Tangian (as Hala and Aziz)" style="width: 100%; margin:0 auto" />
+	<img src="/styles/pictures/film/Hala_and_Aziz_small.png" alt="Basma Al Jabr and Mischa Tangian (as Hala and Aziz)" style="width: 100%; margin:0 auto" />
 	<br /><br />
 	<div class="embed-responsive embed-responsive-16by9">
           <iframe
@@ -65,29 +65,28 @@ After WWI and WWII millions of people were displaced away from Europe into the A
     {% endfor %}
   </div>
 -->	
-<h2 id="stills" class="anchor">Stills</h3>
+<h2 id="stills" class="anchor">Stills</h2>
 	<br>
 	<div id="gale" class="bg-1">
     <div class="rowg">
       <div class="columng"> {% assign colunmLength = 2 %} {% assign index = 1 %} {% assign colunmNumber = 1 %} {% for image in site.static_files %} {% if image.path contains
-        'styles/pictures/stills/' %} <a
+        'styles/pictures/film/stills/' %} {% unless image.path contains '.s' %} <a
           href="..{{ image.path }}"
           data-toggle="lightbox"
           data-gallery="example-gallery"
-        > <img src="..{{ image.path }}" style="width:100%" /> </a> {% assign loopindex = index | modulo: colunmLength %} {% if loopindex ==
-        0 and colunmNumber < 3%} {% assign colunmNumber=colunmNumber | plus:1 %} </div>
-      <div class="columng"> {% endif %} {% assign index=index | plus:1 %} {% endif %} {% endfor %} </div>
+        > <img src="..{{ image.path }}.s" style="width:100%" /> </a> {% assign loopindex = index | modulo: colunmLength %} {% if loopindex == 0 and colunmNumber < 3%} {% assign colunmNumber=colunmNumber | plus:1 %} </div>
+      <div class="columng"> {% endif %} {% assign index=index | plus:1 %} {% endunless %} {% endif %} {% endfor %} </div>
     </div>
   </div>
 
-<h2 id="people" class="anchor">People</h3>
+<h2 id="people" class="anchor">People</h2>
 	<br>
 	<div class="container justify-content-md-center text-justify" style="padding: 15px 20px">
 		<p style="font-weight:1000; font-size:large; text-align: left">SINA - Director / director of photography / editing</p>
 		<div class="row">
 			<div class="col-md"></div>
 			<div class="col-md-3" style="padding-bottom: 10px; padding-top: 5px">
-			<img src="/styles/pictures/film/sina.jpg" style="width: 100%"/>
+			<img src="/styles/pictures/film/sina.jpg.s" style="width: 100%"/>
 			</div>
 		<div class="col-md-8">
 			 <p>Sina Salimi is born and raised in Tehran. He moved to Europe in 2015, where he studied film directing in Portugal, Scotland and Estonia. 
@@ -102,7 +101,7 @@ His short film “Roof Knocking” which was produced in Estonia has received cr
 		<div class="row">
 			<div class="col-md"></div>
 			<div class="col-md-3" style="padding-bottom: 10px; padding-top: 5px">
-			<img src="/styles/pictures/film/neil.jpg" style="width: 100%"/>
+			<img src="/styles/pictures/film/neil.jpg.s" style="width: 100%"/>
 			</div>
 		<div class="col-md-8">
 			 Neil was born in South Africa and studied Opera and Performance in Cape Town and Verona, Italy.
@@ -116,7 +115,60 @@ He worked at the Hannover Staatsoper as in-house Stage Director, Costume Designe
 			<!--<div id="last-child">NEIL - Director / set design<img  src="/styles/pictures/film/neil.jpg" style="width: 25%"/></div-->
 		</div>
 	</div>
-</div>
+	<br>
+		<h3>SINGERS</h3>	
+<ul style="list-style-type:none">	
+<li>Basma Jabr (immigrant woman, "Hala")</li>
+<li>Amanda Becker (immigrations officer "Sara")</li>
+<li>Momo Djender (voice of "Aziz", immigrant man, repr. by Mischa Tangian in the film)</li>
+		</ul>
+<br>
+<h3>CREW</h3>
+ <ul style="list-style-type:none">
+<li>
+Sofia Surgutschowa 
+</li><li>
+	Project Management
+</li><li><br>
+Saeid Behbahaninia
+</li><li>
+	 Light 
+</li><li><br>
+Sina Salimi Khaligh
+</li><li>
+	 Camera
+</li><li><br>
+Isabell Behrent
+</li><li>
+	 Make-up
+</li><li><br>
+Arash Maleki Ghomi
+</li><li>
+	 Colour Grading
+</li><li><br>
+Shahin Paimani
+</li><li>
+	 Sound Design
+</li><li><br>
+Marlene Behrmann
+</li><li>
+	 Production Shoot/Scene 
+</li><li><br>
+Maurizio Borgna
+</li><li>
+	 Mixing 
+</li><li><br>
+Michael Glucksmann
+</li><li>
+	 Sound Editing
+</li><li><br>
+Marian Hafenstein
+</li><li>
+	 Mastering
+</li>
+
+		</ul>
+		</div>
 </div>
 
 <script>
