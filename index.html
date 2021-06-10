@@ -177,9 +177,9 @@ Wir nehmen bald unser ZWEITES ALBUM auf -
 
 <!-- TOUR (News  Section) -->
 <script language="javascript">
-	nr_seasons = 0;
-	prev_season = undefined;
-	season_html = '';
+	nr_years = 0;
+	prev_year = undefined;
+	year_html = '';
 </script>
 
 <div id="tour" class="bg-1">
@@ -194,35 +194,35 @@ Wir nehmen bald unser ZWEITES ALBUM auf -
 
 	  {% for concert in site.concert reversed %}
 	<script language="javascript">
-		season = concertSeason('{{concert.concert_date}}');
-		if (season_html == '' || prev_season != season) {
-			if (typeof prev_season !== "undefined" && prev_season != season) {			
-				season_html += `</div>
+		year = concertYear('{{concert.concert_date}}');
+		if (year_html == '' || prev_year != year) {
+			if (typeof prev_year !== "undefined" && prev_year != year) {			
+				year_html += `</div>
         					</div>
     					</div>`
-				$("div .container").children("div").last().after(season_html);
-				season_html = '';				
+				$("div .container").children("div").last().after(year_html);
+				year_html = '';				
 				}
-			nr_seasons += 1;
+			nr_years += 1;
 			var collapse = 'card-body collapse';
 			var collapsed = '';
-			if (nr_seasons <= 2) {
+			if (nr_years <= 2) {
 				collapse += ' show';
 			} else {
 				collapsed += ' collapsed';
 			}
-			season_html += `<div id="accordion{{forloop.index}}" class="accordion">
+			year_html += `<div id="accordion{{forloop.index}}" class="accordion">
         <div class="card" style="background-color: #333;">			
             <div class="card-header toggle` + collapsed + `" data-toggle="collapse" href="#collapse{{forloop.index}}" style="font-style: normal; font-weight:1000; font-size:large;">
-                <a class="card-title">` + season +
+                <a class="card-title">` + year +
 			`</a>
             </div>
             <div id="collapse{{forloop.index}}" class="` + collapse + `" data-parent="#accordion{{forloop.index}}">`;
-			//season_html = '<p style="background-color: #333;font-style: normal; font-weight:1000; font-size:large;margin-top: 1rem;">' + season + '</p>';			
+			//year_html = '<p style="background-color: #333;font-style: normal; font-weight:1000; font-size:large;margin-top: 1rem;">' + year + '</p>';			
 		};
-		prev_season = season;
+		prev_year = year;
 	  
-	  season_html += `<div class="card bg-light" align="left" style="color: black; margin-top: 10px; margin-bottom: 10px; border: none">
+	  year_html += `<div class="card bg-light" align="left" style="color: black; margin-top: 10px; margin-bottom: 10px; border: none">
 <div style="background: #484d51; color: white;" align: center> 
 	<div style="float:left;">
     	<h6 class="card-header" style="font-weight: 500;">{{concert.concert_date}}</h6>
@@ -241,10 +241,10 @@ Wir nehmen bald unser ZWEITES ALBUM auf -
 </script>
 {% endfor %}
 <script language="javascript">	  
-	  season_html += `</div>
+	  year_html += `</div>
         					</div>
     					</div>`
-				$("div .container").children("div").last().after(season_html);
+				$("div .container").children("div").last().after(year_html);
 	  </script>
     </div>
   </div>
